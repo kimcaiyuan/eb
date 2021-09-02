@@ -5,7 +5,7 @@ ruleset=🛑 广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ruleset=🍃 应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 ruleset=🎶 声破天,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Spotify.list
 ruleset=🎶 TikTok,https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/tiktok.list
-ruleset=📺 Emby,https://raw.githubusercontent.com/sunr1s6/emby/main/Emby.list?token=AVHKL7MV5NBP76P6LGDBSADBGCCES
+ruleset=📺 Emby,https://raw.githubusercontent.com/sunr1s6/emby/main/Emby.list?token=AVHKL7LGKFZRNTR7TIODHTDBGCUJA
 ruleset=📲 Twitter,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list
 ruleset=🍎 苹果服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Apple.list
