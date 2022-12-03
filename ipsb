@@ -5,7 +5,7 @@ DOMAIN-SUFFIX,emotn.com
 DOMAIN-SUFFIX,emotnstore.com
 DOMAIN-SUFFIX,keeflys.com
 DOMAIN-SUFFIX,static.mudvod.tv
-
+DOMAIN-SUFFIX,wago.io
 DOMAIN-KEYWORD,keeflys
 DOMAIN-KEYWORD,nbys.tv
 DOMAIN-KEYWORD,mudvod
@@ -18,3 +18,5 @@ DOMAIN-KEYWORD,tw
 DOMAIN-KEYWORD,kr
 DOMAIN-KEYWORD,wowhead
 DOMAIN-KEYWORD,curseforge
+DOMAIN-KEYWORD,wago
+
