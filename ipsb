@@ -7,7 +7,7 @@ DOMAIN-SUFFIX,keeflys.com
 DOMAIN-SUFFIX,static.mudvod.tv
 DOMAIN-SUFFIX,wago.io
 DOMAIN-KEYWORD,keeflys
-DOMAIN-KEYWORD,nbys.tv
+DOMAIN-KEYWORD,nbys
 DOMAIN-KEYWORD,mudvod
 
 DOMAIN-KEYWORD,newpppp
@@ -19,4 +19,7 @@ DOMAIN-KEYWORD,kr
 DOMAIN-KEYWORD,wowhead
 DOMAIN-KEYWORD,curseforge
 DOMAIN-KEYWORD,wago
-
+DOMAIN-KEYWORD,battle
+DOMAIN-account.battle.net
+DOMAIN-navbar.blizzard.com
+DOMAIN-KEYWORD,blizzard
