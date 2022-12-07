@@ -1,8 +1,8 @@
-DOMAIN-ip.sb
-DOMAIN-ipify.org
+DOMAIN,ip.sb
+DOMAIN,ipify.org
 DOMAIN-SUFFIX,ip.sb.com
 DOMAIN-SUFFIX,emotn.com
-DOMAIN-emotnstore.com
+DOMAIN,emotnstore.com
 DOMAIN-SUFFIX,keeflys.com
 DOMAIN-SUFFIX,static.mudvod.tv
 DOMAIN-SUFFIX,wago.io
@@ -18,6 +18,6 @@ DOMAIN-KEYWORD,wowhead
 DOMAIN-KEYWORD,curseforge
 DOMAIN-KEYWORD,wago
 DOMAIN-KEYWORD,pornemby
-DOMAIN-pornemby.club
+DOMAIN,pornemby.club
 DOMAIN-KEYWORD,emotnstore
-DOMAIN-mtalk.google.com
+DOMAIN,mtalk.google.com
