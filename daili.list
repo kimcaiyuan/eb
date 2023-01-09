@@ -27,5 +27,6 @@ DOMAIN,mtalk.google.com
 DOMAIN-KEYWORD,cloudflare
 DOMAIN,dns.quad9.net
 DOMAIN-KEYWORD,myexternalip
-DOMAIN-KEYWORD,mypikpak
 DOMAIN,jp.tiar.app
+DOMAIN-KEYWORD,mypikpak
+DOMAIN,mypikpak.com
