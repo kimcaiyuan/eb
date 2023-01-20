@@ -20,8 +20,9 @@ DOMAIN-KEYWORD,wago
 DOMAIN-KEYWORD,pornemby
 DOMAIN,pornemby.club
 DOMAIN-KEYWORD,emotnstore
+# ADGH DNS
 DOMAIN,mtalk.google.com
-DOMAIN-SUFFIX,pornemby.club
+DOMAIN-KEYWORD,pornemby
 DOMAIN-KEYWORD,google
 DOMAIN,mtalk.google.com
 DOMAIN-KEYWORD,cloudflare
