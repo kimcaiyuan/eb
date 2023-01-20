@@ -28,11 +28,12 @@ DOMAIN-KEYWORD,cloudflare
 DOMAIN,dns.quad9.net
 DOMAIN-KEYWORD,myexternalip
 DOMAIN,jp.tiar.app
-DOMAIN,dash.vm2.me
+# winktv
 DOMAIN-KEYWORD,winktv
 DOMAIN-SUFFIX,winktv.co.kr
-DOMAIN-SUFFIX,chat2.neolive.kr
 DOMAIN-SUFFIX,neolive.kr
-DOMAIN-KEYWORD,neolive.kr
 DOMAIN-KEYWORD,neolive 
 DOMAIN-SUFFIX,icache.pandalive.co.kr
+# mypikpak
+DOMAIN,api-drive.mypikpak.com
+DOMAIN,dash.vm2.me
