@@ -18,5 +18,5 @@ DOMAIN-KEYWORD,musical.ly
 DOMAIN-KEYWORD,tiktok
 DOMAIN-KEYWORD,tiktokv
 PROCESS-NAME,com.zhiliaoapp.musically
-DOMAIN-KEYWORD,mypikpak
-DOMAIN,mypikpak.com
+#DOMAIN-KEYWORD,mypikpak
+#DOMAIN,mypikpak.com
