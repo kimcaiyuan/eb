@@ -46,10 +46,4 @@ DOMAIN,dash.vm2.me
 DOMAIN,user.mypikpak.com
 DOMAIN-SUFFIX,deepl.com
 DOMAIN-SUFFIX,wowhead.com
-IP-CIDR,9.9.9.9
-IP-CIDR,8.8.8.8
-IP-CIDR,8.8.4.4
-DOMAIN-SUFFIX,jp.tiarap.org
-DOMAIN-SUFFIX,dns.comss.one
-GEOIP,tw
-GEOIP,kr
+
