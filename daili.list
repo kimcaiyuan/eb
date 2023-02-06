@@ -36,6 +36,9 @@ DOMAIN-SUFFIX,winktv.co.kr
 DOMAIN-SUFFIX,neolive.kr
 DOMAIN-KEYWORD,neolive 
 DOMAIN-SUFFIX,icache.pandalive.co.kr
+DOMAIN-SUFFIX,hls.live-video.net
+DOMAIN-SUFFIX,playback.live-video.net
+
 # mypikpak
 DOMAIN,api-drive.mypikpak.com
 DOMAIN,dash.vm2.me
