@@ -1,31 +1,9 @@
-#DNS
+# ADGH DNS
 IP-CIDR,9.9.9.9
 IP-CIDR,8.8.8.8
 IP-CIDR,8.8.4.4
 GEOIP,tw
 GEOIP,kr
-DOMAIN-SUFFIX,jp.tiarap.org
-DOMAIN-SUFFIX,dns.comss.one
-DOMAIN,api-ipv4.ip.sb
-DOMAIN-KEYWORD,ipify
-DOMAIN-KEYWORD,ip.sb
-DOMAIN-KEYWORD,emotn
-DOMAIN,emotnstore.com
-DOMAIN-SUFFIX,keeflys.com
-DOMAIN,keeflys.com
-DOMAIN-SUFFIX,static.mudvod.tv
-DOMAIN-SUFFIX,wago.io
-DOMAIN-KEYWORD,keeflys
-DOMAIN-KEYWORD,nbys
-DOMAIN-KEYWORD,mudvod
-DOMAIN-KEYWORD,newpppp
-DOMAIN-KEYWORD,nivod
-DOMAIN-KEYWORD,biggggg
-DOMAIN-KEYWORD,wowhead
-DOMAIN-KEYWORD,curseforge
-DOMAIN-KEYWORD,wago
-DOMAIN-KEYWORD,emotnstore
-# ADGH DNS
 DOMAIN,mtalk.google.com
 DOMAIN-KEYWORD,pornemby
 DOMAIN-KEYWORD,google
@@ -34,6 +12,28 @@ DOMAIN-KEYWORD,cloudflare
 DOMAIN,dns.quad9.net
 DOMAIN-KEYWORD,myexternalip
 DOMAIN,jp.tiar.app
+DOMAIN-SUFFIX,jp.tiarap.org
+DOMAIN-SUFFIX,dns.comss.one
+DOMAIN,api-ipv4.ip.sb
+DOMAIN-KEYWORD,ipify
+DOMAIN-KEYWORD,ip.sb
+
+DOMAIN-KEYWORD,emotn
+DOMAIN,emotnstore.com
+DOMAIN-SUFFIX,keeflys.com
+DOMAIN,keeflys.com
+DOMAIN-SUFFIX,static.mudvod.tv
+ 
+DOMAIN-KEYWORD,keeflys
+DOMAIN-KEYWORD,nbys
+DOMAIN-KEYWORD,mudvod 
+DOMAIN-KEYWORD,newpppp
+DOMAIN-KEYWORD,nivod
+DOMAIN-KEYWORD,biggggg
+ 
+ 
+ 
+DOMAIN-KEYWORD,emotnstore
 # winktv
 DOMAIN-KEYWORD,winktv
 DOMAIN-SUFFIX,winktv.co.kr
@@ -45,5 +45,10 @@ DOMAIN,api-drive.mypikpak.com
 DOMAIN,dash.vm2.me
 DOMAIN,user.mypikpak.com
 DOMAIN-SUFFIX,deepl.com
+# WOW
 DOMAIN-SUFFIX,wowhead.com
 DOMAIN,raider.io
+DOMAIN-SUFFIX,wago.io
+DOMAIN-KEYWORD,wowhead
+DOMAIN-KEYWORD,curseforge
+DOMAIN-KEYWORD,wago
