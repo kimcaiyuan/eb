@@ -178,28 +178,33 @@ https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list, ta
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list, tag=🐼 国内网站, force-policy=direct, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list, tag=🐼 国内网站, force-policy=direct, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list, tag=🐼 国内网站, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, tag=🐼 国内网站, force-policy=direct, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list, tag=🐯 Twitter, force-policy=🐯 Twitter, enabled=true
 https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/HBO.list, tag=🎱 HBO, force-policy=🎱 HBO, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Telegram.list, tag=🎱 Telegram, force-policy=🎱 Telegram, enabled=true
-https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/Hulu.list, tag=🍐 HULU, force-policy=🍐 Hulu, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Hulu/Hulu.list, tag=🍐 HULU, force-policy=🍐 Hulu, enabled=true
 https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/tiktok5.list, tag=🎸 TikTok, force-policy=🎸 TikTok, enabled=true
-https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/Bilibili.list, tag=🦁 Bilibili, force-policy=🦁 Bilibili, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BiliBili/BiliBili.list, tag=🦁 Bilibili, force-policy=🦁 Bilibili, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BiliBiliIntl/BiliBiliIntl.list, tag=🦁 Bilibili, force-policy=🦁 Bilibili, enabled=true
 https://github.com/Hackl0us/SS-Rule-Snippet/blob/main/Rulesets/Quantumult/App/stream/DisneyPlus.list, tag=🦁 Disney, force-policy=🦁 Disney, enabled=true
 https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/netfxx.list, tag=📺 Netflix, force-policy=📺 Netflix, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Spotify.list, tag=💡 Spotify, force-policy=💡 Spotify, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list, tag=🎬 YouTube, force-policy=🎬 YouTube, enabled=true
 https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/Pornhub, tag=🐝 Pornhub, force-policy=🐝 Pornhub, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list, tag=📽 国内视频, force-policy=📽 国内视频, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaMedia/ChinaMedia.list, tag=📽 国内视频, force-policy=📽 国内视频, enabled=true
 https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/guowaiyingshi.list, tag=💻 国外影视,force-policy= 💻 国外影视, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list, tag=🌍 国外网站, force-policy= 🌏 国外网站, enabled=true
 https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/daili.list, tag=🌍 国外网站, force-policy= 🌏 国外网站, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Blizzard/Blizzard.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
+https://https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Blizzard/Blizzard.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Steam/Steam.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Battle/Battle.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
 https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/wow.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
 https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/enbi.list, tag=📡 Emby, force-policy=📡 Emby, enabled=true
+https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/QuantumultX/Emby/Emby.list, tag=📡 Emby, force-policy=📡 Emby, enabled=true
 https://raw.githubusercontent.com/Hedilict/QuantumultX/master/Filter/NetEaseCloudMusic.list, tag=🙈 网易云音乐, force-policy=🙈 网易云音乐, enabled=true
 #苹果ios更新屏蔽
 https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rules/AppleIOSUpdate.list, force-policy=AppleIOSUpdate,tag=AppleIOSUpdate,enabled=true
@@ -215,6 +220,37 @@ https://raw.githubusercontent.com/Tartarus2014/QuantumultX-Script/main/Unlock/Ti
 https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rewrite/youtube.qxrewrite, tag=youtube广告屏蔽, update-interval=604800, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rewrite/AdBlock/Youtube.conf, tag=Youtube 去广告
 https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule
+^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-img
+^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject-img
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject-img
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ url reject-img
+^https?:\/\/.+\.youtube\.com\/get_midroll_ url reject-img
+^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite url reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads url reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat url reject-img
+^https?:\/\/.+\.youtube\.com\/pagead\/ url reject-img
+^https?:\/\/.+\.youtube\.com\/ptracking url reject-img
+# 哔哩哔哩动画 精简去广告 (By @Kaya)
+;^https:\/\/app\.bilibili\.com\/(search\/resource|x\/(resource\/show\/tab|v2\/(view|rank|feed|reply\/main|account\/mine))) url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/Bilibili.js
+# 解锁B站大会员-圈X规则
+;https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best:22333/geturl/
+;https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best:22333/season/
+# 百科去广告
+^https?:\/\/baike-api\.smzdm\.com\/home_v3\/list url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+# 搜索结果去广告
+^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10 url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+# 去微信公众号广告 (By NobyDa)
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
+# 抖音去广告去水印 (By Choler)
+#URL Rewrite
+^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/feed\/ url request-header ^GET \/aweme\/v\d\/feed\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/feed/$1$2Host: aweme.snssdk.com
+^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/aweme\/post\/ url request-header ^GET \/aweme\/v\d\/aweme\/post\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/aweme/post/$1$2Host: aweme.snssdk.com
+^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/follow\/feed\/ url request-header ^GET \/aweme\/v\d\/follow\/feed\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/follow/feed/$1$2Host: aweme.snssdk.com
+^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/nearby\/feed\/ url request-header ^GET \/aweme\/v\d\/nearby\/feed\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/nearby/feed/$1$2Host: aweme.snssdk.com
+^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/search\/item\/ url request-header ^GET \/aweme\/v\d\/search\/item\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/search/item/$1$2Host: aweme.snssdk.com
+^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/general\/search\/single\/ url request-header ^GET \/aweme\/v\d\/general\/search\/single\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/general/search/single/$1$2Host: aweme.snssdk.com
+^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/hot\/search\/video\/list\/ url request-header ^GET \/aweme\/v\d\/hot\/search\/video\/list\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/hot/search/video/list/$1$2Host: aweme.snssdk.com
+
 #搬运脚本合集
 https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rewrite/MyJsRewrite.conf, tag=搬运脚本合集, update-interval=86400, opt-parser=true, enabled=true
 #Netflix IMDB 評分
