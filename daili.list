@@ -6,7 +6,6 @@ GEOIP,tw
 GEOIP,kr
 DOMAIN,mtalk.google.com
 DOMAIN-SUFFIX,dns.switch.ch
-DOMAIN-KEYWORD,pornemby
 DOMAIN-KEYWORD,google
 DOMAIN,mtalk.google.com
 DOMAIN-KEYWORD,cloudflare
