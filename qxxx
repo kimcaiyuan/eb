@@ -214,6 +214,7 @@ https://raw.githubusercontent.com/Tartarus2014/QuantumultX-Script/main/Unlock/Ti
 #YouTube广告屏蔽
 https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rewrite/youtube.qxrewrite, tag=youtube广告屏蔽, update-interval=604800, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rewrite/AdBlock/Youtube.conf, tag=Youtube 去广告
+https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule
 #搬运脚本合集
 https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rewrite/MyJsRewrite.conf, tag=搬运脚本合集, update-interval=86400, opt-parser=true, enabled=true
 #Netflix IMDB 評分
@@ -230,7 +231,8 @@ https://raw.githubusercontent.com/qiangxinglin/Emby/main/QuantumultX/emby.conf, 
 https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rewrite/AdBlock/Weibo.conf, tag=微博去广告
 # 开屏去广告
 ^https?:\/\/app-api\.smzdm\.com\/util\/loading url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-
+# 网盘挂载
+https://raw.githubusercontent.com/hhlass/qx_script/main/qx_pan.js
 # 首页去广告
 ^https?:\/\/homepage-api\.smzdm\.com\/v3\/home url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 
