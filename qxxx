@@ -41,6 +41,7 @@ geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubuserc
 # 活动抽奖 (By @makexp)
 5 0 * * * nzw9314/Script/hdcj.js
 [dns]
+# > 通用域名 DNS
 server=114.114.114.114
 server=202.141.176.93 
 server=202.141.178.13
@@ -48,7 +49,7 @@ server=117.50.10.10
 server=223.5.5.5
 server=119.29.29.29:53
 server=119.28.28.28
-
+# 此处可对特定域名指定相应 DNS
 server=/*.taobao.com/223.5.5.5
 server=/*.tmall.com/223.5.5.5
 server=/*.alipay.com/223.5.5.5
@@ -89,41 +90,51 @@ server=/*.xiaomi.com/119.29.29.29
 #
 
 [policy]
-static=🚫 广告拦截, reject, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Advertising.png
+url-latency-benchmark=自动选择, server-tag-regex=.*, check-interval=600, tolerance=80, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
+url-latency-benchmark=HK 香港, server-tag-regex=香港|🇭🇰|HK|湾仔|港仔|九龙, check-interval=600, tolerance=80, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+url-latency-benchmark=RU 俄罗斯, server-tag-regex=俄罗斯|🇷🇺|莫斯科|圣彼得堡|喀山|哈尔科夫|乌法|新西伯利亚|下诺夫哥罗德|沃罗涅什|Russia, check-interval=600, tolerance=80, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/RU.png
+url-latency-benchmark=US 美国, server-tag-regex=美国|🇺🇸|US|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States, check-interval=600, tolerance=80, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+url-latency-benchmark=UK 英国, server-tag-regex=英国|🇬🇧|UK, check-interval=600, tolerance=80, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/UK.png
+url-latency-benchmark=CA 加拿大, server-tag-regex=加拿大|🇨🇦|ca, check-interval=600, tolerance=80, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/CA.png
+url-latency-benchmark=JP 日本, server-tag-regex=日本|🇯🇵|JP|东京|川日|大阪|泉日|埼玉|沪日|深日|Japan|名古屋|福冈|仙台|京都|Japan, check-interval=600, tolerance=80, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+url-latency-benchmark=KR 韩国, server-tag-regex=韩国|🇰🇷|KR, check-interval=600, tolerance=80, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+url-latency-benchmark=TR 土耳其, server-tag-regex=土耳其|tr, check-interval=600, tolerance=80, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TR.png
+url-latency-benchmark=SG 新加坡, server-tag-regex=新加坡|🇸🇬|SG|狮城|Singapore, check-interval=600, tolerance=80, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+url-latency-benchmark=DE 德国, server-tag-regex=德国|🇩🇪, check-interval=600, tolerance=80, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png
+url-latency-benchmark=IND 印度, server-tag-regex=印度, check-interval=600, tolerance=80, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/India.png
+url-latency-benchmark=TW 台湾, server-tag-regex=台湾|🇹🇼|TW|台北|新竹|台中|桃园|台南|高雄|花莲, check-interval=600, tolerance=80, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+static=🚫 广告拦截, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/广告拦截.png
 static=🔰 运营劫持, reject, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hijacking.png
-static=🍎 苹果服务, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
-static=🌏 国外网站, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
+static=🍎 苹果服务, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/苹果服务.png
+static=🌏 国外网站, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 static=💻 国外影视, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ForeignMedia.png
-static=📽 国内视频, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DomesticMedia.png
-static=🎱 HBO, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HBO.png
-static=🍐 Hulu, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hulu.png
-static=📺 Netflix, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix_Letter.png
-static=🎬 YouTube, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YouTube.png
-static=🐝 Pornhub, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Pornhub.png
-static=🦁 动画疯, proxy, direct, img-url=https://github.com/A1exInamin/Zure/raw/master/IconSet/Bahamut.png
-static=💡 Spotify, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Spotify.png
-static=📡 华文电视Pro, proxy, img-url=https://raw.githubusercontent.com/A1exInamin/Zure/master/IconSet/5iTV.png
-static=🌵 Speedtest, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Speedtest.png
-static=🦑 蘋果の新聞, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Lab.png
-static=🐯 TVB,proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TVB.png
-static=🎸 TikTok, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TikTok.png
-static=🌟 IPLC, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Star.png
-static=🐷 BGPX, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Pig.png
-static=🇺🇸 USAX, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States_Map.png
-static=🇨🇳 CHINAX, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/China_Map.png
-static=🇯🇵 Japan, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Japan.png
-static=🏳️‍🌈 Taiwan, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Taiwan.png
-static=🇰🇷 Korea, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Korea.png
-static=🇺🇳 Nations, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/China.png
-static=🇸🇬 Singapore, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Singapore.png
-static=🇬🇧 United Kingdom, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_Kingdom.png
-static=🇭🇰 Hong Kong, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hong_Kong.png
-static=🇺🇸 United States, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States.png
-static=🕹 FINAL, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
-static=🙈 网易云音乐, direct, 🎧 解锁网易云音乐1, 🎧 解锁网易云音乐2, 🎧 解锁网易云音乐3, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netease_Music_Unlock.png
-;static=🦒 可用性策略, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Available.png
-;ssid=🐳 SSID策略, proxy, proxy, 一般路由器: proxy, 翻墙路由器: direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
-
+static=📽 国内视频, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/StreamingCN.png
+static=🎱 HBO, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HBO.png
+static=🍐 Hulu, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Hulu.png
+static=📺 Netflix, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netflix.png
+static=🎬 YouTube, proxy, 自动选择, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
+static=🐝 Pornhub, proxy, 自动选择, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Pornhub.png
+static=🐝 Disney, proxy, 自动选择, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/DisneyPlus.png
+static=🦁 Bilibili, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png
+static=💡 Spotify, proxy,  自动选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Spotify.png
+static=📡 Emby, proxy, 自动选择, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png                        
+static=🌵 Game, proxy, 自动选择, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Clubhounse.png
+static=🦑 Telegram, proxy, 自动选择, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Telegram.png
+static=🎸 TikTok, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
+static=🌟 Twitter, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Twitter.png
+static=🇯🇵 Japan, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+static=🏳️‍🌈 Taiwan, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+static=🇰🇷 Korea, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+static=🇺🇳 Nations, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/UN.png
+static=🇸🇬 Singapore, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+static=🇬🇧 United Kingdom, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/UK.png
+static=🇭🇰 Hong Kong, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+static=🇺🇸 United States, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+static=🇺🇸 Turkey, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TR.png
+static=🕹 FINAL, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Roundrobin.png
+static=🙈 网易云音乐, direct, 🎧 解锁网易云音乐1, 🎧 解锁网易云音乐2, 🎧 解锁网易云音乐3, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/网易云解锁.png
+;static=🦒 可用性策略, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
+;ssid=🐳 SSID策略, proxy, proxy, 一般路由器: proxy, 翻墙路由器: direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
 
 ;static=policy-name-1, Sample-A, Sample-B, Sample-C
 ;available=policy-name-2, Sample-A, Sample-B, Sample-C
@@ -141,36 +152,92 @@ static=🙈 网易云音乐, direct, 🎧 解锁网易云音乐1, 🎧 解锁网
 
 #一键连订阅节点以及网易云解说节点
 http://zhonglelequn.tk/ZGVtbw==, tag=网易云&一键连, enabled=true
-
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=Sub Store, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Bili_Auto_Regions.conf, tag=Bilibili换区脚本, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf , tag=TestFlight区域限制解除, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tiktok解锁, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Netflix_ratings.conf, tag=Netflix评分, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机重定向, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/app2smile/rules/master/module/bilibili-qx.conf, tag=Bilibili去广告, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/AdvertisingPlus.conf, tag=去广告脚本, update-interval=172800, opt-parser=false, enabled=true
 
 [filter_remote]
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=🚫 广告拦截, force-policy=🚫 广告拦截, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Advertising.list, tag=🚫 广告拦截, force-policy=🚫 广告拦截, enabled=true
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=📵 广告拦截, force-policy=🚫 广告拦截, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list, tag=🔰 运营劫持, force-policy=🔰 运营劫持, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Apple.list, tag=🍎 苹果服务, force-policy=🍎 苹果服务,enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list, tag=🐼 国内网站, force-policy=direct, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/encoreTVB.list, tag=🐯 TVB, force-policy=🐯 TVB, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/HBO.list, tag=🎱 HBO, force-policy=🎱 HBO, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/Hulu.list, tag=🍐 HULU, force-policy=🍐 Hulu, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/TikTok.list, tag=🎸 TikTok, force-policy=🎸 TikTok, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/Bahamut.list, tag=🦁 动画疯, force-policy=🦁 动画疯, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/Netflix.list, tag=📺 Netflix, force-policy=📺 Netflix, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/Spotify.list, tag=💡 Spotify, force-policy=💡 Spotify, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/YouTube.list, tag=🎬 YouTube, force-policy=🎬 YouTube, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/Pornhub.list, tag=🐝 Pornhub, force-policy=🐝 Pornhub, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/DomesticMedia.list, tag=📽 国内视频, force-policy=📽 国内视频, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/ForeignMedia.list, tag=💻 国外影视,force-policy= 💻 国外影视, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list, tag=🌍 国外网站, force-policy= 🌏 国外网站, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Speedtest.list, tag=🌵 Speedtest, force-policy=🌵 Speedtest, enabled=true
-https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/HWTV.list, tag=📡 华文电视PRO, force-policy=📡 华文电视Pro, enabled=true
+https://limbopro.com/Adblock4limbo.list, tag=📵 广告拦截, force-policy=🚫 广告拦截, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Hijacking.list, tag=🔰 运营劫持, force-policy=🔰 运营劫持, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Apple.list, tag=🍎 苹果服务, force-policy=🍎 苹果服务,enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list, tag=🐼 国内网站, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list, tag=🐼 国内网站, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list, tag=🐼 国内网站, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list, tag=🐼 国内网站, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list, tag=🐼 国内网站, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list, tag=🐯 Twitter, force-policy=🐯 Twitter, enabled=true
+https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/HBO.list, tag=🎱 HBO, force-policy=🎱 HBO, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Telegram.list, tag=🎱 Telegram, force-policy=🎱 Telegram, enabled=true
+https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/Hulu.list, tag=🍐 HULU, force-policy=🍐 Hulu, enabled=true
+https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/tiktok5.list, tag=🎸 TikTok, force-policy=🎸 TikTok, enabled=true
+https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/Bilibili.list, tag=🦁 Bilibili, force-policy=🦁 Bilibili, enabled=true
+https://github.com/Hackl0us/SS-Rule-Snippet/blob/main/Rulesets/Quantumult/App/stream/DisneyPlus.list, tag=🦁 Disney, force-policy=🦁 Disney, enabled=true
+https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/netfxx.list, tag=📺 Netflix, force-policy=📺 Netflix, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Spotify.list, tag=💡 Spotify, force-policy=💡 Spotify, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list, tag=🎬 YouTube, force-policy=🎬 YouTube, enabled=true
+https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/Pornhub, tag=🐝 Pornhub, force-policy=🐝 Pornhub, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list, tag=📽 国内视频, force-policy=📽 国内视频, enabled=true
+https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/guowaiyingshi.list, tag=💻 国外影视,force-policy= 💻 国外影视, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list, tag=🌍 国外网站, force-policy= 🌏 国外网站, enabled=true
+https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/daili.list, tag=🌍 国外网站, force-policy= 🌏 国外网站, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Blizzard/Blizzard.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Steam/Steam.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
+https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/wow.list, tag=🌵 Game, force-policy=🌵 Game, enabled=true
+https://raw.githubusercontent.com/sunr1s6/ClashEmby/main/enbi.list, tag=📡 Emby, force-policy=📡 Emby, enabled=true
 https://raw.githubusercontent.com/Hedilict/QuantumultX/master/Filter/NetEaseCloudMusic.list, tag=🙈 网易云音乐, force-policy=🙈 网易云音乐, enabled=true
+#苹果ios更新屏蔽
+https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rules/AppleIOSUpdate.list, force-policy=AppleIOSUpdate,tag=AppleIOSUpdate,enabled=true
 
 [rewrite_remote]
+#tiktalk
+https://raw.githubusercontent.com/Tartarus2014/QuantumultX-Script/main/Unlock/TiktokJP.conf,tag=Tiktok日区解锁, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Tartarus2014/QuantumultX-Script/main/Unlock/TiktokKR.conf,tag=Tiktok韩区解锁, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Tartarus2014/QuantumultX-Script/main/Unlock/TiktokTW.conf,tag=Tiktok台湾解锁, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Tartarus2014/QuantumultX-Script/main/Unlock/TiktokUK.conf,tag=Tiktok英区解锁, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Tartarus2014/QuantumultX-Script/main/Unlock/TiktokUS.conf,tag=Tiktok美区解锁, update-interval=86400, opt-parser=false, enabled=false
+#YouTube广告屏蔽
+https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rewrite/youtube.qxrewrite, tag=youtube广告屏蔽, update-interval=604800, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rewrite/AdBlock/Youtube.conf, tag=Youtube 去广告
+#搬运脚本合集
+https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rewrite/MyJsRewrite.conf, tag=搬运脚本合集, update-interval=86400, opt-parser=true, enabled=true
+#Netflix IMDB 評分
+https://kinta.ma/surge/netflix_rating.sgmodule, tag=Netflix IMDB 評分, update-interval=86400, opt-parser=true, enabled=false
+#boxjs
+https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=86400, opt-parser=false, enabled=true
+#知乎
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.qxrewrite, tag=知乎助手_去广告及体验增强, update-interval=86400, opt-parser=false, enabled=true
+#bilibili
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.qxrewrite, tag=哔哩哔哩_去广告, update-interval=86400, opt-parser=false, enabled=true
+#emby破解
+https://raw.githubusercontent.com/qiangxinglin/Emby/main/QuantumultX/emby.conf, tag=Emby Premiere, update-interval=86400, opt-parser=false, enabled=true
+# 微博去广告
+https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rewrite/AdBlock/Weibo.conf, tag=微博去广告
+# 开屏去广告
+^https?:\/\/app-api\.smzdm\.com\/util\/loading url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+
+# 首页去广告
+^https?:\/\/homepage-api\.smzdm\.com\/v3\/home url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1复写, enabled=true
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrite.conf, tag=神机复写规则, enabled=true
 https://raw.githubusercontent.com/Hedilict/QuantumultX/master/Js_local_WorkingCopy.conf, tag=Hedilict复写, enabled=true
 https://raw.githubusercontent.com/Hedilict/QuantumultX/master/Js_Local_WorkingCopy_Cookie.conf, tag=newcookie, enabled=true
-
 
 [server_local]
 #网易云音乐
@@ -205,7 +272,6 @@ http=111.67.197.245:10086, over-tls=false, fast-open=false, udp-relay=false, tag
 [filter_local]
 
 
-
 # 使用规则屏蔽 IP，有可能误伤其他功能或者应用，可以自己抓包缩小 IP 范围
 # ip-cidr, 203.119.144.0/23, reject, no-resolve
 # ip-cidr, 203.119.175.0/24, reject, no-resolve
@@ -228,26 +294,6 @@ host-suffix, tiktokcdn.com,proxy
 host-suffix, -tiktokcdn-com,proxy
 host-suffix, muscdn.com, proxy
 user-agent, TikTok*, proxy
-
-#🦑 蘋果の新聞-广告拦截
-host-suffix, appledaily.com.hk, 🦑 蘋果の新聞
-host-suffix, nxtdig.com.hk, 🦑 蘋果の新聞
-host-suffix, nextmedia.com, 🦑 蘋果の新聞
-host-suffix, omoplanet.com, 🦑 蘋果の新聞
-host-suffix, nxtdig.com, 🦑 蘋果の新聞
-host-suffix, crwdcntrl.net, 🦑 蘋果の新聞
-host-suffix, polldaddy.com, 🦑 蘋果の新聞
-host-suffix, nexage.com, 🦑 蘋果の新聞
-host-suffix, appledaily.com.tw, 🦑 蘋果の新聞
-host-suffix, twnextdigital.com, 🦑 蘋果の新聞
-host-suffix, nxtdig.com.tw, 🦑 蘋果の新聞
-host-suffix, branch.io, 🦑 蘋果の新聞
-
-#📡 华文电视Pro-广告拦截
-HOST-SUFFIX, mob.com, 📡 华文电视Pro
-HOST-SUFFIX, 5itv.tv, 📡 华文电视Pro
-HOST-SUFFIX, ocnttv.com, 📡 华文电视Pro
-USER-AGENT, HWTVMobile*, 📡 华文电视Pro
 
 
 ip-cidr, 10.0.0.0/8, direct
