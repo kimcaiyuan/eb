@@ -33,6 +33,8 @@ DOMAIN-KEYWORD,nivod
 DOMAIN-KEYWORD,nivod4
 DOMAIN-KEYWORD,biggggg
 DOMAIN-KEYWORD,emotnstore
+DOMAIN-SUFFIX,api.nivodz.com
+
 # winktv
 DOMAIN-KEYWORD,winktv
 DOMAIN-SUFFIX,winktv.co.kr
@@ -43,6 +45,7 @@ DOMAIN-SUFFIX,hls.live-video.net
 DOMAIN-SUFFIX,playback.live-video.net
 
 # mypikpak
+DOMAIN-SUFFIX,drive.mypikpak.com
 DOMAIN,api-drive.mypikpak.com
 DOMAIN,dash.vm2.me
 DOMAIN,user.mypikpak.com
