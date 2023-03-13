@@ -8,6 +8,7 @@ DOMAIN,mtalk.google.com
 DOMAIN-SUFFIX,dns.switch.ch
 DOMAIN-KEYWORD,google
 DOMAIN,mtalk.google.com
+DOMAIN-SUFFIX,translate.google.com
 DOMAIN-KEYWORD,cloudflare
 DOMAIN,dns.quad9.net
 DOMAIN,doh.opendns.com
