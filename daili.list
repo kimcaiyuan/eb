@@ -51,6 +51,11 @@ DOMAIN,dash.vm2.me
 DOMAIN,user.mypikpak.com
 DOMAIN-SUFFIX,deepl.com
 DOMAIN-SUFFIX,pornemby.club
+DOMAIN-SUFFIX,sp.mypikpak.com
+DOMAIN,access.mypikpak.com
+DOMAIN,user.mypikpak.com
+DOMAIN,rcv5-sp.mypikpak.com
+DOMAIN,rcv4-sp.mypikpak.com
 # WOW
 DOMAIN-SUFFIX,wowhead.com
 DOMAIN,raider.io
