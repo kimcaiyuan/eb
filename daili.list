@@ -68,3 +68,4 @@ DOMAIN-KEYWORD,tmdb
 # dashland
 DOMAIN-KEYWORD,dashlane
 DOMAIN-SUFFIX,bing.com
+DOMAIN,api.themoviedb.org
