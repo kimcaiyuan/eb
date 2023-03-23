@@ -9,6 +9,8 @@ DOMAIN-SUFFIX,dns.switch.ch
 DOMAIN-KEYWORD,google
 DOMAIN,mtalk.google.com
 DOMAIN-SUFFIX,translate.google.com
+DOMAIN,translate.googleapis.com
+
 DOMAIN-KEYWORD,cloudflare
 DOMAIN,dns.quad9.net
 DOMAIN,doh.opendns.com
@@ -68,4 +70,6 @@ DOMAIN-KEYWORD,tmdb
 # dashland
 DOMAIN-KEYWORD,dashlane
 DOMAIN-SUFFIX,bing.com
+#TMDB
 DOMAIN,api.themoviedb.org
+DOMAIN,api4.thetvdb.com
