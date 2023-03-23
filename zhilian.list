@@ -3,8 +3,6 @@ DOMAIN-SUFFIX,kuaibozy.net
 DOMAIN-SUFFIX,bdzybf7.com
 DOMAIN-SUFFIX,dianyingn.cc
 DOMAIN-SUFFIX,bdzyimg.com
-DOMAIN,dl-a10b-0394.mypikpak
-DOMAIN,dl-a10b-0394.mypikpak.com
 DOMAIN,client.wns.windows.com
 DOMAIN,international-gfe.download.nvidia.com
 DOMAIN-SUFFIX,download.nvidia.com
@@ -19,3 +17,5 @@ DOMAIN,vip-lixian-07.mypikpak
 DOMAIN,dl-a10b-0394.mypikpak
 DOMAIN,dl-a10b-0394.mypikpak.com
 SRC-IP-CIDR,140.238.30.246/32
+DOMAIN,dl-a10b-0394.mypikpak
+DOMAIN,dl-a10b-0394.mypikpak.com
