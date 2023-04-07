@@ -26,7 +26,6 @@ DOMAIN-KEYWORD,emotn
 DOMAIN,emotnstore.com
 DOMAIN-SUFFIX,keeflys.com
 DOMAIN,keeflys.com
-DOMAIN-SUFFIX,static.mudvod.tv
 DOMAIN-KEYWORD,keeflys
 DOMAIN-KEYWORD,nbys
 #泥巴影视
@@ -38,6 +37,8 @@ DOMAIN-KEYWORD,biggggg
 DOMAIN-KEYWORD,emotnstore
 DOMAIN-SUFFIX,api.nivodz.com
 DOMAIN-SUFFIX,static.nivod4.tv
+DOMAIN-SUFFIX,nivod4.tv
+DOMAIN-SUFFIX,static.mudvod.tv
 # winktv
 DOMAIN-KEYWORD,winktv
 DOMAIN-SUFFIX,winktv.co.kr
