@@ -20,3 +20,9 @@ SRC-IP-CIDR,140.238.30.246/32
 DOMAIN,dl-a10b-0394.mypikpak
 DOMAIN,dl-a10b-0394.mypikpak.com
 DOMAIN-SUFFIX,zerotier.com
+#BT
+DOMAIN-SUFFIX,miobt.com
+DOMAIN-SUFFIX,hdpianyuan.com
+DOMAIN-SUFFIX,hd.lz-cdn18.com
+DOMAIN-SUFFIX,skrbtra.top
+DOMAIN-SUFFIX,orz.mom
