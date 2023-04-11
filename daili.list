@@ -11,7 +11,6 @@ DOMAIN,mtalk.google.com
 DOMAIN-SUFFIX,translate.google.com
 DOMAIN,translate.googleapis.com
 
-DOMAIN-KEYWORD,cloudflare
 DOMAIN,dns.quad9.net
 DOMAIN,doh.opendns.com
 DOMAIN-KEYWORD,myexternalip
