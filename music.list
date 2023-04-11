@@ -20,11 +20,11 @@ DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com
 DOMAIN-SUFFIX,tidal.com
 DOMAIN-SUFFIX,tidalhifi.com
 DOMAIN-SUFFIX,wimpmusic.com
-1
 
 #blueseamusics
 DOMAIN-SUFFIX,blueseamusics.com
 DOMAIN-KEYWORD,blueseamusics
+
 # YouTubeMusic
 USER-AGENT,*YouTubeMusic*
 USER-AGENT,*com.google.ios.youtubemusic*
