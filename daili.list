@@ -74,10 +74,10 @@ DOMAIN-SUFFIX,wago.io
 DOMAIN-KEYWORD,wowhead
 DOMAIN-KEYWORD,curseforge
 DOMAIN-KEYWORD,wago
-DOMAIN-KEYWORD,tmdb
 # dashland
 DOMAIN-KEYWORD,dashlane
 DOMAIN-SUFFIX,bing.com
 #TMDB
 DOMAIN,api.themoviedb.org
 DOMAIN,api4.thetvdb.com
+DOMAIN-KEYWORD,tmdb
