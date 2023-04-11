@@ -4,10 +4,8 @@ IP-CIDR,8.8.8.8/8
 IP-CIDR,8.8.4.4/8
 GEOIP,tw
 GEOIP,kr
-DOMAIN,mtalk.google.com
 DOMAIN-SUFFIX,dns.switch.ch
 DOMAIN-KEYWORD,google
-DOMAIN,mtalk.google.com
 DOMAIN-SUFFIX,translate.google.com
 DOMAIN,translate.googleapis.com
 
