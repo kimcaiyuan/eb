@@ -3,6 +3,10 @@ DOMAIN-SUFFIX,emby.wtf
 #odysseyplus
 DOMAIN-KEYWORD,odysseyplus
 DOMAIN-SUFFIX,odysseyplus.site
+DOMAIN,cf.odysseyplus.site
+DOMAIN,us.odysseyplus.site
+DOMAIN,jp.odysseyplus.site
+DOMAIN,jp2.odysseyplus.site
 #jmsooo
 DOMAIN-KEYWORD,jmsooo
 # misakaf
