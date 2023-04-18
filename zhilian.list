@@ -10,6 +10,7 @@ DOMAIN,raider.io.cn
 DOMAIN-SUFFIX,zimuku.org
 DOMAIN-SUFFIX,eset.com
 DOMAIN-KEYWORD,eset
+
 #pikpak
 DOMAIN-KEYWORD,lixian
 DOMAIN,vip-lixian-07.mypikpak.com
@@ -17,9 +18,6 @@ DOMAIN,vip-lixian-07.mypikpak
 DOMAIN,dl-a10b-0394.mypikpak
 DOMAIN,dl-a10b-0394.mypikpak.com
 SRC-IP-CIDR,140.238.30.246/32
-DOMAIN,dl-a10b-0394.mypikpak
-DOMAIN,dl-a10b-0394.mypikpak.com
 DOMAIN-SUFFIX,zerotier.com
 #BT
-
 DOMAIN-SUFFIX,orz.mom
