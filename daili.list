@@ -55,17 +55,13 @@ DOMAIN-SUFFIX,hls.live-video.net
 DOMAIN-SUFFIX,playback.live-video.net
 
 # mypikpak
-DOMAIN-SUFFIX,drive.mypikpak.com
 DOMAIN,api-drive.mypikpak.com
 DOMAIN,dash.vm2.me
-DOMAIN,user.mypikpak.com
-DOMAIN-SUFFIX,deepl.com
-DOMAIN-SUFFIX,pornemby.club
-DOMAIN-SUFFIX,sp.mypikpak.com
 DOMAIN,access.mypikpak.com
 DOMAIN,user.mypikpak.com
 DOMAIN,rcv5-sp.mypikpak.com
 DOMAIN,rcv4-sp.mypikpak.com
+DOMAIN,config.mypikpak.com
 # WOW
 DOMAIN-SUFFIX,wowhead.com
 DOMAIN,raider.io
@@ -80,7 +76,8 @@ DOMAIN-SUFFIX,bing.com
 DOMAIN,api.themoviedb.org
 DOMAIN,api4.thetvdb.com
 DOMAIN-KEYWORD,tmdb
-
 #docker
 DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,cdn.adguard.com
+#翻译
+DOMAIN-SUFFIX,deepl.com
