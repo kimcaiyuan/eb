@@ -6,7 +6,9 @@ DOMAIN-SUFFIX,adguard.org
 DOMAIN-SUFFIX,bit.no.com
 DOMAIN-SUFFIX,btlibrary.me
 DOMAIN-SUFFIX,cccat.io
+DOMAIN-SUFFIX,chat.openai.com
 DOMAIN-SUFFIX,cloudcone.com
+DOMAIN-SUFFIX,dubox.com
 DOMAIN-SUFFIX,gameloft.com
 DOMAIN-SUFFIX,garena.com
 DOMAIN-SUFFIX,hoyolab.com
@@ -15,6 +17,7 @@ DOMAIN-SUFFIX,ip138.com
 DOMAIN-SUFFIX,linkedin.com
 DOMAIN-SUFFIX,myteamspeak.com
 DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,ping.pe
 DOMAIN-SUFFIX,reddit.com
 DOMAIN-SUFFIX,teddysun.com
@@ -22,38 +25,6 @@ DOMAIN-SUFFIX,tumbex.com
 DOMAIN-SUFFIX,twdvd.com
 DOMAIN-SUFFIX,unsplash.com
 
-# 国外域名
-DOMAIN-SUFFIX,eu
-DOMAIN-SUFFIX,hk
-DOMAIN-SUFFIX,jp
-DOMAIN-SUFFIX,kr
-DOMAIN-SUFFIX,sg
-DOMAIN-SUFFIX,tw
-DOMAIN-SUFFIX,uk
-DOMAIN-SUFFIX,us
-DOMAIN-SUFFIX,ca
-
-# 国外域名关键字
-DOMAIN-KEYWORD,1e100
-DOMAIN-KEYWORD,abema
-DOMAIN-KEYWORD,appledaily
-DOMAIN-KEYWORD,avtb
-DOMAIN-KEYWORD,beetalk
-DOMAIN-KEYWORD,blogspot
-DOMAIN-KEYWORD,dropbox
-DOMAIN-KEYWORD,facebook
-DOMAIN-KEYWORD,fbcdn
-DOMAIN-KEYWORD,github
-DOMAIN-KEYWORD,gmail
-DOMAIN-KEYWORD,google
-DOMAIN-KEYWORD,instagram
-DOMAIN-KEYWORD,porn
-DOMAIN-KEYWORD,sci-hub
-DOMAIN-KEYWORD,spotify
-DOMAIN-KEYWORD,telegram
-DOMAIN-KEYWORD,twitter
-DOMAIN-KEYWORD,whatsapp
-DOMAIN-KEYWORD,youtube
 
 # GFW list
 DOMAIN-SUFFIX,gfwlist.start
@@ -234,6 +205,7 @@ DOMAIN-SUFFIX,advanscene.com
 DOMAIN-SUFFIX,advertfan.com
 DOMAIN-SUFFIX,advertisercommunity.com
 DOMAIN-SUFFIX,ae.org
+DOMAIN-SUFFIX,aei.org
 DOMAIN-SUFFIX,aenhancers.com
 DOMAIN-SUFFIX,aex.com
 DOMAIN-SUFFIX,af.mil
@@ -340,6 +312,7 @@ DOMAIN-SUFFIX,animecrazy.net
 DOMAIN-SUFFIX,aniscartujo.com
 DOMAIN-SUFFIX,annatam.com
 DOMAIN-SUFFIX,anobii.com
+DOMAIN-SUFFIX,anonfiles.com
 DOMAIN-SUFFIX,anontext.com
 DOMAIN-SUFFIX,anonymitynetwork.com
 DOMAIN-SUFFIX,anonymizer.com
@@ -1005,6 +978,7 @@ DOMAIN-SUFFIX,cloakpoint.com
 DOMAIN-SUFFIX,cloudcone.com
 DOMAIN-SUFFIX,cloudflare-ipfs.com
 DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,cloudfunctions.net
 DOMAIN-SUFFIX,club1069.com
 DOMAIN-SUFFIX,clubhouseapi.com
 DOMAIN-SUFFIX,clyp.it
@@ -2779,6 +2753,7 @@ DOMAIN-SUFFIX,itaiwan.gov.tw
 DOMAIN-SUFFIX,italiatibet.org
 DOMAIN-SUFFIX,itasoftware.com
 DOMAIN-SUFFIX,itemdb.com
+DOMAIN-SUFFIX,itemfix.com
 DOMAIN-SUFFIX,ithome.com.tw
 DOMAIN-SUFFIX,itsaol.com
 DOMAIN-SUFFIX,itshidden.com
@@ -3034,6 +3009,7 @@ DOMAIN-SUFFIX,lbank.info
 DOMAIN-SUFFIX,le-vpn.com
 DOMAIN-SUFFIX,leafyvpn.net
 DOMAIN-SUFFIX,lecloud.net
+DOMAIN-SUFFIX,ledger.com
 DOMAIN-SUFFIX,leeao.com.cn
 DOMAIN-SUFFIX,lefora.com
 DOMAIN-SUFFIX,left21.hk
@@ -3742,6 +3718,7 @@ DOMAIN-SUFFIX,okk.tw
 DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,olabloga.pl
 DOMAIN-SUFFIX,old-cat.net
+DOMAIN-SUFFIX,olehdtv.com
 DOMAIN-SUFFIX,olevod.com
 DOMAIN-SUFFIX,olumpo.com
 DOMAIN-SUFFIX,olympicwatch.org
@@ -6283,4 +6260,3 @@ DOMAIN-SUFFIX,ocnttv.com
 # VikACG
 DOMAIN-SUFFIX,vikacg.com
 DOMAIN-SUFFIX,picjs.xyz
-1
