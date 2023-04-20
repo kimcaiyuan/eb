@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,eset.com
 DOMAIN-KEYWORD,eset
 
 #pikpak
-#DOMAIN-KEYWORD,lixian
+DOMAIN-KEYWORD,lixian
 #DOMAIN,vip-lixian-07.mypikpak.com
 #DOMAIN,vip-lixian-07.mypikpak
 #DOMAIN,dl-a10b-0394.mypikpak
