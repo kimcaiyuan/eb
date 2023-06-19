@@ -1,9 +1,9 @@
 DOMAIN-SUFFIX,dns.switch.ch
 DOMAIN-SUFFIX,translate.google.com
 DOMAIN,translate.googleapis.com
-SRC-IP-CIDR,1.1.1.1/8
-SRC-IP-CIDR,175.3.234.160/24
-
+IP-CIDR,1.1.1.1/8
+IP-CIDR,175.3.234.160/24
+IP-CIDR,103.195.103.66/24
 DOMAIN,dns.quad9.net
 DOMAIN,doh.opendns.com
 DOMAIN-KEYWORD,myexternalip
