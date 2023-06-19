@@ -11,7 +11,10 @@ DOMAIN-SUFFIX,dns.comss.one
 DOMAIN,api-ipv4.ip.sb
 DOMAIN-KEYWORD,ipify
 DOMAIN-KEYWORD,ip.sb
-
+DOMAIN,dns.cloudflare.com
+DOMAIN,dns.google/dns-query
+DOMAIN,public.dns.iij.jp/dns-query
+DOMAIN,dns.cloudflare.com/dns-query
 DOMAIN-KEYWORD,emotn
 DOMAIN,emotnstore.com
 DOMAIN-SUFFIX,keeflys.com
