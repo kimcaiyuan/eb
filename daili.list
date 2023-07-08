@@ -66,7 +66,7 @@ DOMAIN,config.mypikpak.com
 DOMAIN-KEYWORD,mypikpak
 # WOW
 DOMAIN-SUFFIX,wowhead.com
-DOMAIN,raider.io
+DOMAIN-SUFFIX,raider.io
 DOMAIN-SUFFIX,wago.io
 DOMAIN-KEYWORD,wowhead
 DOMAIN-KEYWORD,curseforge
