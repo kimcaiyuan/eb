@@ -63,7 +63,7 @@ DOMAIN,user.mypikpak.com
 DOMAIN,rcv5-sp.mypikpak.com
 DOMAIN,rcv4-sp.mypikpak.com
 DOMAIN,config.mypikpak.com
-DOMAIN-KEYWORD,mypikpak
+#DOMAIN-KEYWORD,mypikpak
 # WOW
 DOMAIN-SUFFIX,wowhead.com
 DOMAIN-SUFFIX,raider.io
