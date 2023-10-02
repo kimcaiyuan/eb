@@ -82,7 +82,7 @@ DOMAIN-SUFFIX,bing.com
 #TMDB
 DOMAIN,api.themoviedb.org
 DOMAIN,api4.thetvdb.com
-DOMAIN-KEYWORD,tmdb
+DOMAIN,api.tmdb.org
 DOMAIN-KEYWORD,themoviedb
 #docker
 DOMAIN-SUFFIX,adguard.com
