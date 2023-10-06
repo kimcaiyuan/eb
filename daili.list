@@ -1,4 +1,10 @@
-DOMAIN-SUFFIX,dns.switch.ch
+DOMAIN,public.dns.iij.jp/dns-query
+DOMAIN,jp.tiar.app/dns-query
+DOMAIN,dns.twnic.tw/dns-query
+DOMAIN,doh-fi.blahdns.com/dns-query
+DOMAIN,doh.opendns.com/dns-query
+DOMAIN,doh.dns.sb
+DOMAIN,dns.switch.ch
 DOMAIN-SUFFIX,translate.google.com
 DOMAIN,translate.googleapis.com
 IP-CIDR,1.1.1.1/8
