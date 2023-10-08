@@ -90,6 +90,8 @@ DOMAIN,api.themoviedb.org
 DOMAIN,api4.thetvdb.com
 DOMAIN,api.tmdb.org
 DOMAIN-KEYWORD,themoviedb
+DOMAIN,image.tmdb.org
+
 #docker
 DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,cdn.adguard.com
