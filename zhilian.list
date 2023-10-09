@@ -35,4 +35,11 @@ DOMAIN-SUFFIX,hdmayi.com
 DOMAIN-KEYWORD,hdmayi
 DOMAIN-KEYWORD,ultrahd
 DOMAIN-SUFFIX,ultrahd.net
+#b站
+DOMAIN-KEYWORD,bilibili
+DOMAIN-SUFFIX,mcdn.bilivideo.cn
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN,passport.bilibili.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,biliimg.com
 
