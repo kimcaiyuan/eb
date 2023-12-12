@@ -1,3 +1,6 @@
+DOMAIN,dns.google/dns-query
+DOMAIN,dns.cloudflare.com/dns-query
+DOMAIN,dns.twnic.tw/dns-query
 DOMAIN,public.dns.iij.jp/dns-query
 DOMAIN,jp.tiar.app/dns-query
 DOMAIN,dns.twnic.tw/dns-query
@@ -7,7 +10,7 @@ DOMAIN,doh.dns.sb
 DOMAIN,dns.switch.ch
 DOMAIN-SUFFIX,translate.google.com
 DOMAIN,translate.googleapis.com
-IP-CIDR,1.1.1.1/8
+#IP-CIDR,1.1.1.1/8
 SRC-IP-CIDR,175.3.234.160/24
 IP-CIDR,104.21.30.162/24
 IP-CIDR,103.195.103.66/24
