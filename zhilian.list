@@ -10,10 +10,10 @@ DOMAIN,raider.io.cn
 DOMAIN-SUFFIX,zimuku.org
 DOMAIN-SUFFIX,eset.com
 DOMAIN-KEYWORD,eset
-DOMAIN-KEYWORD,cdn.jsdelivr.net
-DOMAIN-KEYWORD,fastly.jsdelivr.net
-DOMAIN-KEYWORD,testingcf.jsdelivr.net
-DOMAIN-KEYWORD,raw.fastgit.org
+DOMAIN,cdn.jsdelivr.net
+DOMAIN,fastly.jsdelivr.net
+DOMAIN,testingcf.jsdelivr.net
+DOMAIN,raw.fastgit.org
 #pikpak
 DOMAIN-KEYWORD,lixian
 DOMAIN,vip-lixian-07.mypikpak.com
