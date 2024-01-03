@@ -1,48 +1,44 @@
 # NAME: PrivateTracker
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2023-10-03 02:16:12
-# DOMAIN: 148
+# UPDATED: 2024-01-04 02:16:32
+# DOMAIN: 137
 # DOMAIN-KEYWORD: 3
-# DOMAIN-SUFFIX: 119
+# DOMAIN-SUFFIX: 122
 # IP-CIDR: 8
 # IP-CIDR6: 2
-# TOTAL: 280
-DOMAIN,107.182.30.76.16clouds.com
+# TOTAL: 272
 DOMAIN,1337.abcvg.info
 DOMAIN,1c.premierzal.ru
 DOMAIN,6.pocketnet.app
 DOMAIN,6ahddutb1ucc3cp.ru
-DOMAIN,aarsen.me
 DOMAIN,acxx.de
 DOMAIN,aegir.sexy
-DOMAIN,bigfoot1942.sektori.org
-DOMAIN,boysbitte.be
-DOMAIN,bt.endpot.com
+DOMAIN,api.alarmasqueretaro.com
+DOMAIN,bittorrent-tracker.e-n-c-r-y-p-t.net
+DOMAIN,black-bird.ynh.fr
 DOMAIN,bt.ktrackers.com
 DOMAIN,bt.okmp3.ru
+DOMAIN,bt.rer.lol
 DOMAIN,bt1.archive.org
 DOMAIN,bt2.archive.org
-DOMAIN,buny.uk
+DOMAIN,bvarf.tracker.sh
 DOMAIN,carr.codes
-DOMAIN,city21.pk
+DOMAIN,ch3oh.ru
 DOMAIN,concen.org
 DOMAIN,d40969.acod.regrucolo.ru
 DOMAIN,ec2-18-191-163-220.us-east-2.compute.amazonaws.com
-DOMAIN,epider.me
+DOMAIN,evan.im
 DOMAIN,exodus.desync.com
 DOMAIN,explodie.org
 DOMAIN,fe.dealclub.de
 DOMAIN,fh2.cmp-gaming.com
 DOMAIN,free.publictracker.xyz
-DOMAIN,freedomalternative.com
-DOMAIN,htz3.noho.st
-DOMAIN,hub.bugout.link
-DOMAIN,incine.ru
+DOMAIN,hz.is
 DOMAIN,ipv6.fuuuuuck.com
-DOMAIN,lloria.fr
+DOMAIN,ipv6.rer.lol
+DOMAIN,jutone.com
 DOMAIN,mail.artixlinux.org
-DOMAIN,mail.segso.net
 DOMAIN,moonburrow.club
 DOMAIN,movies.zsw.ca
 DOMAIN,new-line.net
@@ -51,10 +47,9 @@ DOMAIN,nyaa.tracker.wf
 DOMAIN,odd-hd.fr
 DOMAIN,oh.fuuuuuck.com
 DOMAIN,open.acgnxtracker.com
+DOMAIN,open.acgtracker.com
 DOMAIN,open.demonii.com
 DOMAIN,open.dstud.io
-DOMAIN,open.free-tracker.ga
-DOMAIN,open.publictracker.xyz
 DOMAIN,open.stealth.si
 DOMAIN,open.tracker.ink
 DOMAIN,open.u-p.pw
@@ -62,35 +57,29 @@ DOMAIN,opentor.org
 DOMAIN,opentracker.i2p.rocks
 DOMAIN,opentracker.io
 DOMAIN,p4p.arenabg.com
-DOMAIN,private.anonseed.com
-DOMAIN,public-tracker.cf
-DOMAIN,public.publictracker.xyz
 DOMAIN,public.tracker.vraphim.com
 DOMAIN,retracker.hotplug.ru
+DOMAIN,retracker.lanta.me
 DOMAIN,retracker01-msk-virt.corbina.net
-DOMAIN,run-2.publictracker.xyz
-DOMAIN,run.publictracker.xyz
 DOMAIN,ryjer.com
-DOMAIN,sanincode.com
+DOMAIN,sabross.xyz
 DOMAIN,share.camoe.cn
-DOMAIN,static.54.161.216.95.clients.your-server.de
+DOMAIN,su-data.com
 DOMAIN,t.acg.rip
 DOMAIN,t.nyaatracker.com
+DOMAIN,t.overflow.biz
 DOMAIN,t1.hloli.org
 DOMAIN,tamas3.ynh.fr
-DOMAIN,thouvenin.cloud
+DOMAIN,thinking.duckdns.org
 DOMAIN,tk1.trackerservers.com
-DOMAIN,tk1v6.trackerservers.com
 DOMAIN,torrents.artixlinux.org
 DOMAIN,torrentsmd.com
 DOMAIN,tr.burnabyhighstar.com
 DOMAIN,tracker-udp.gbitt.info
 DOMAIN,tracker.0x7c0.com
-DOMAIN,tracker.4.babico.name.tr
+DOMAIN,tracker.anima.nz
 DOMAIN,tracker.artixlinux.org
-DOMAIN,tracker.auctor.tv
 DOMAIN,tracker.birkenwald.de
-DOMAIN,tracker.bittor.pw
 DOMAIN,tracker.bt4g.com
 DOMAIN,tracker.ccp.ovh
 DOMAIN,tracker.cloudit.top
@@ -100,42 +89,42 @@ DOMAIN,tracker.dler.com
 DOMAIN,tracker.dler.org
 DOMAIN,tracker.edkj.club
 DOMAIN,tracker.electro-torrent.pl
-DOMAIN,tracker.farted.net
 DOMAIN,tracker.filemail.com
 DOMAIN,tracker.files.fm
 DOMAIN,tracker.fnix.net
-DOMAIN,tracker.foreverpirates.co
 DOMAIN,tracker.gbitt.info
-DOMAIN,tracker.h0me.cc
+DOMAIN,tracker.gcrreen.xyz
+DOMAIN,tracker.hentai.gg
 DOMAIN,tracker.imgoingto.icu
-DOMAIN,tracker.ipfsscan.io
-DOMAIN,tracker.ipv6tracker.org
 DOMAIN,tracker.ipv6tracker.ru
 DOMAIN,tracker.kuroy.me
-DOMAIN,tracker.leech.ie
 DOMAIN,tracker.lilithraws.cf
 DOMAIN,tracker.lilithraws.org
 DOMAIN,tracker.loligirl.cn
+DOMAIN,tracker.mirrorbay.org
 DOMAIN,tracker.moeking.me
 DOMAIN,tracker.mywaifu.best
+DOMAIN,tracker.nartlof.com.br
+DOMAIN,tracker.netmap.top
 DOMAIN,tracker.openbittorrent.com
 DOMAIN,tracker.opentrackr.org
 DOMAIN,tracker.openwebtorrent.com
-DOMAIN,tracker.publictracker.xyz
 DOMAIN,tracker.qu.ax
 DOMAIN,tracker.renfei.net
 DOMAIN,tracker.skyts.net
 DOMAIN,tracker.srv00.com
+DOMAIN,tracker.swateam.org.uk
 DOMAIN,tracker.t-rb.org
 DOMAIN,tracker.tamersunion.org
 DOMAIN,tracker.theoks.net
 DOMAIN,tracker.therarbg.com
+DOMAIN,tracker.therarbg.to
 DOMAIN,tracker.tiny-vps.com
 DOMAIN,tracker.torrent.eu.org
 DOMAIN,tracker.tryhackx.org
+DOMAIN,tracker.yemekyedim.com
 DOMAIN,tracker1.520.jp
 DOMAIN,tracker1.bt.moack.co.kr
-DOMAIN,tracker1.itzmx.com
 DOMAIN,tracker1.myporn.club
 DOMAIN,tracker2.dler.com
 DOMAIN,tracker2.dler.org
@@ -147,16 +136,17 @@ DOMAIN,ttk2.nbaonlineservice.com
 DOMAIN,u4.trakx.crim.ist
 DOMAIN,u6.trakx.crim.ist
 DOMAIN,uploads.gamecoast.net
-DOMAIN,v2.iperson.xyz
+DOMAIN,v6-tracker.0g.cx
 DOMAIN,wepzone.net
 DOMAIN,www.all4nothin.net
 DOMAIN,www.peckservers.com
 DOMAIN,www.torrent.eu.org
 DOMAIN,www.wareztorrent.com
-DOMAIN,x.paranoid.agency
-DOMAIN,yahor.of.by
-DOMAIN,z.paranoid.agency
+DOMAIN,x.t-1.org
+DOMAIN,y.paranoid.agency
+DOMAIN,yolo.liberbear.com
 DOMAIN-SUFFIX,1ptba.com
+DOMAIN-SUFFIX,2xfree.org
 DOMAIN-SUFFIX,52pt.site
 DOMAIN-SUFFIX,aidoru-online.me
 DOMAIN-SUFFIX,alpharatio.cc
@@ -187,6 +177,7 @@ DOMAIN-SUFFIX,cinematik.net
 DOMAIN-SUFFIX,cinemaz.to
 DOMAIN-SUFFIX,classix-unlimited.co.uk
 DOMAIN-SUFFIX,concertos.live
+DOMAIN-SUFFIX,creditracker.net
 DOMAIN-SUFFIX,dicmusic.club
 DOMAIN-SUFFIX,discfan.net
 DOMAIN-SUFFIX,dxdhd.com
@@ -228,6 +219,7 @@ DOMAIN-SUFFIX,iptorrents.com
 DOMAIN-SUFFIX,j99.info
 DOMAIN-SUFFIX,joyhd.net
 DOMAIN-SUFFIX,jpopsuki.eu
+DOMAIN-SUFFIX,kamept.com
 DOMAIN-SUFFIX,karagarga.in
 DOMAIN-SUFFIX,keepfrds.com
 DOMAIN-SUFFIX,landof.tv
@@ -275,15 +267,9 @@ DOMAIN-SUFFIX,trontv.com
 DOMAIN-SUFFIX,u2.dmhy.org
 DOMAIN-SUFFIX,uhdbits.org
 DOMAIN-SUFFIX,xauat6.edu.cn
-#DOMAIN-SUFFIX,rousi.zip
 DOMAIN-KEYWORD,announce
 DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,tracker
-DOMAIN-KEYWORD,hhanclub
-DOMAIN-KEYWORD,hhan
-DOMAIN-KEYWORD,audiences
-DOMAIN-SUFFIX,ptchdbits.co
-DOMAIN-KEYWORD,chdbits
 IP-CIDR,119.28.71.45/32,no-resolve
 IP-CIDR,184.105.151.166/32,no-resolve
 IP-CIDR,207.241.226.111/32,no-resolve
@@ -294,3 +280,10 @@ IP-CIDR,52.58.128.163/32,no-resolve
 IP-CIDR,91.216.110.52/32,no-resolve
 IP-CIDR6,2001:1b10:1000:8101:0:242:ac11:2/128,no-resolve
 IP-CIDR6,2001:470:1:189:0:1:2:3/128,no-resolve
+#自己添加
+
+DOMAIN-KEYWORD,hhanclub
+DOMAIN-KEYWORD,hhan
+DOMAIN-KEYWORD,audiences
+DOMAIN-SUFFIX,ptchdbits.co
+DOMAIN-KEYWORD,chdbits
