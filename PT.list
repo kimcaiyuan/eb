@@ -281,9 +281,9 @@ IP-CIDR,91.216.110.52/32,no-resolve
 IP-CIDR6,2001:1b10:1000:8101:0:242:ac11:2/128,no-resolve
 IP-CIDR6,2001:470:1:189:0:1:2:3/128,no-resolve
 #自己添加
-
 DOMAIN-KEYWORD,hhanclub
 DOMAIN-KEYWORD,hhan
 DOMAIN-KEYWORD,audiences
 DOMAIN-SUFFIX,ptchdbits.co
 DOMAIN-KEYWORD,chdbits
+DOMAIN-KEYWORD,ptchdbits
