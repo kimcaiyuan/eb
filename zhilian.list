@@ -28,6 +28,9 @@ DOMAIN,dl-a10b-0590.mypikpak.com
 #DOMAIN-SUFFIX,zerotier.com
 #BT
 DOMAIN-SUFFIX,orz.mom
+DOMAIN-SUFFIX,offo.top
+DOMAIN-SUFFIX,icc2022.com
+DOMAIN-KEYWORD,icc2022
 #日本网盘
 DOMAIN-SUFFIX,higa.teracloud.jp
 #酷绘影视
@@ -46,5 +49,4 @@ DOMAIN,passport.bilibili.com
 DOMAIN-SUFFIX,biliapi.net
 DOMAIN-SUFFIX,biliimg.com
 DOMAIN-SUFFIX,myds.me
-DOMAIN-SUFFIX,offo.top
 
