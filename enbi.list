@@ -1,4 +1,10 @@
 #zdz
+DOMAIN,pub1.emby.wtf
+DOMAIN,pub2.emby.wtf
+DOMAIN,pub3.emby.wtf
+DOMAIN,pub1.term.wtf
+DOMAIN,pub2.term.wtf
+DOMAIN,pub3.term.wtf
 DOMAIN-SUFFIX,emby.wtf
 #odysseyplus
 DOMAIN-KEYWORD,odysseyplus
@@ -9,7 +15,6 @@ DOMAIN,lfy.odysseyplus.site
 DOMAIN,jp.odysseyplus.site
 DOMAIN,jp2.odysseyplus.site
 DOMAIN,cdn.odylife.org
-
 #jmsooo
 DOMAIN-KEYWORD,jmsooo
 # misakaf
@@ -18,7 +23,6 @@ DOMAIN,pornemby.club
 DOMAIN,emby.misakaf.org
 DOMAIN,ju.dog
 DOMAIN-SUFFIX,ju.dog
-
 #厂长直连
 DOMAIN-KEYWORD,czzy
 DOMAIN-SUFFIX,czzy88.com
