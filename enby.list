@@ -7,7 +7,6 @@ DOMAIN,pub2.term.wtf
 DOMAIN,pub3.term.wtf
 DOMAIN-SUFFIX,emby.wtf
 #odysseyplus
-DOMAIN-KEYWORD,odysseyplus
 DOMAIN-SUFFIX,odysseyplus.site
 DOMAIN,cf.odysseyplus.site
 DOMAIN,us.odysseyplus.site
@@ -24,7 +23,6 @@ DOMAIN,emby.misakaf.org
 DOMAIN,ju.dog
 DOMAIN-SUFFIX,ju.dog
 DOMAIN,porn.aca.best
-DOMAIN-SUFFIX,aca.best
 #厂长直连
 DOMAIN-KEYWORD,czzy
 DOMAIN-SUFFIX,czzy88.com
