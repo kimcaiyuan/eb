@@ -7,19 +7,21 @@ DOMAIN,pub2.term.wtf
 DOMAIN,pub3.term.wtf
 DOMAIN-SUFFIX,emby.wtf
 #odysseyplus
-DOMAIN-SUFFIX,odysseyplus.site
 DOMAIN,cf.odysseyplus.site
 DOMAIN,us.odysseyplus.site
 DOMAIN,lfy.odysseyplus.site
-DOMAIN,jp.odysseyplus.site
-DOMAIN,jp2.odysseyplus.site
+DOMAIN,kr.odysseyplus.site
+DOMAIN,us2.odysseyplus.site
 DOMAIN,cdn.odylife.org
+DOMAIN-SUFFIX,odysseyplus.site
+DOMAIN-KEYWORD,odysseyplus
 #jmsooo
 DOMAIN-KEYWORD,jmsooo
 # misakaf
-DOMAIN-KEYWORD,misakaf
 DOMAIN,pornemby.club
+DOMAIN-SUFFIX,pornemby.club
 DOMAIN,emby.misakaf.org
+DOMAIN-SUFFIX,misakaf.org
 DOMAIN,ju.dog
 DOMAIN-SUFFIX,ju.dog
 DOMAIN,porn.aca.best
