@@ -211,6 +211,7 @@ DOMAIN-SUFFIX,hdtime.org
 DOMAIN-SUFFIX,hdupt.com
 DOMAIN-SUFFIX,hdzone.me
 DOMAIN-SUFFIX,hhanclub.top
+DOMAIN-SUFFIX,hhan.club
 DOMAIN-SUFFIX,hitpt.com
 DOMAIN-SUFFIX,hitpt.org
 DOMAIN-SUFFIX,hudbt.hust.edu.cn
@@ -287,6 +288,7 @@ IP-CIDR6,2001:470:1:189:0:1:2:3/128,no-resolve
 #自己添加
 DOMAIN-KEYWORD,hhanclub
 DOMAIN-KEYWORD,hhan
+DOMAIN,tracker.hhan.club
 DOMAIN-KEYWORD,audiences
 DOMAIN-SUFFIX,ptchdbits.co
 DOMAIN-KEYWORD,chdbits
