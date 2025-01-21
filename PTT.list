@@ -257,6 +257,11 @@ DOMAIN-SUFFIX,connects.icu
 DOMAIN-SUFFIX,nextpt.net
 DOMAIN,SUFFIX.hhan.club
 DOMAIN-SUFFIX,ptchdbits.co
+DOMAIN-SUFFIX,0ff.cc
+DOMAIN-SUFFIX,ultrahd.net
+DOMAIN-SUFFIX,icc2022.com
+DOMAIN-SUFFIX,rousi.zip
+DOMAIN-SUFFIX,fsm.name
 DOMAIN-KEYWORD,announce
 DOMAIN-KEYWORD,m-team
 DOMAIN-KEYWORD,torrent
@@ -264,6 +269,7 @@ DOMAIN-KEYWORD,audiences
 DOMAIN-KEYWORD,chdbits
 DOMAIN-KEYWORD,ptchdbits
 DOMAIN-KEYWORD,pterclub
+
 IP-CIDR,207.241.226.111/32,no-resolve
 IP-CIDR,207.241.231.226/32,no-resolve
 IP-CIDR,52.58.128.163/32,no-resolve
