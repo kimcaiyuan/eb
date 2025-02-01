@@ -85,7 +85,6 @@ DOMAIN-KEYWORD,curseforge
 DOMAIN-KEYWORD,wago
 DOMAIN,wow.zamimg.com
 DOMAIN,geolocation.onetrust.com
-
 DOMAIN,cdn.cookielaw.org
 DOMAIN,tr.api.fanbyte.com
 # dashland
@@ -97,7 +96,6 @@ DOMAIN,api4.thetvdb.com
 DOMAIN,api.tmdb.org
 DOMAIN-KEYWORD,themoviedb
 DOMAIN,image.tmdb.org
-
 #docker
 DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,cdn.adguard.com
@@ -112,3 +110,6 @@ DOMAIN-SUFFIX,jable.tv
 #bing
 DOMAIN-KEYWORD,bing
 DOMAIN-SUFFIX,bing.com
+#unrad
+DOMAIN-KEYWORD,unraid
+DOMAIN-KEYWORD,cloudflare
