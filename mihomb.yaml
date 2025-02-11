@@ -129,10 +129,10 @@ proxies:
     udp: true
  
 # 锚点
-pr: &pr {type: select, proxies: [🚀 节点选择, 🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯 新加坡故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点,🇸🇬 新加坡节点, 🇺🇲 美国节点,🇰🇷 韩国节点, 🟢 直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, 🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯 新加坡故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点,🇸🇬 新加坡节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🟢 直连]}
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯 新加坡故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点,🇸🇬 新加坡节点, 🇺🇲 美国节点,🇰🇷 韩国节点, 🟢 直连]}
+  - {name: 🚀 节点选择, type: select, proxies: [🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯 新加坡故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点,🇸🇬 新加坡节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🟢 直连]}
   - {name: 🔯 故障转移, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}  
   - {name: 🌐 全部节点, type: select, include-all: true}
   - {name: 🌐 VPS自建节点, type: select, include-all: true, filter: "(?i)vps"}
@@ -203,7 +203,7 @@ rule-anchor:
 rule-providers: 
   private_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   emby: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/enby.list"}
-  pt: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/PTT.list"}
+  pt: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/PT1.list"}
   game:
     - {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/wow.list"}
     - {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Battle/Battle.list"}
