@@ -150,7 +150,7 @@ proxy-groups:
   - {name: 🎮 游戏平台, type: select, proxies: [🟢 直连, 🇭🇰 香港节点, 🇹🇼 台湾节点]}
   - {name: ✈️ Speedtest,!!merge <<: *pr}
   - {name: 💶 PayPal,!!merge <<: *pr}
-  - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择]}
+  - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择, 🇺🇲 美国节点]}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼,!!merge <<: *pr}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)港|hk|hongkong|hong kong"}
@@ -172,6 +172,7 @@ rules:
   - RULE-SET,emby,📺 Emby
   - RULE-SET,pt,♻️ PT规则
   - RULE-SET,apple_domain,🍎 Apple
+  - RULE-SET,daili,🌐 全部节点
   - RULE-SET,game,🎮 游戏平台
   - RULE-SET,Battle,🎮 游戏平台
   - RULE-SET,Blizzard,🎮 游戏平台
@@ -189,7 +190,7 @@ rules:
   - RULE-SET,netflix_domain,🎥 NETFLIX
   - RULE-SET,paypal_domain,💶 PayPal
   - RULE-SET,geolocation-!cn,🚀 节点选择
-  - RULE-SET,daili,🎯 全球直连
+  - RULE-SET,zhilian,🎯 全球直连
   - RULE-SET,cn_domain,🎯 全球直连
   - RULE-SET,google_ip,🍀 Google,no-resolve
   - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
@@ -207,12 +208,13 @@ rule-providers:
   private_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   emby: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/enby.list"}
   pt: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/PT1.list"}
+  daili: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/daili.list"}
   game: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/wow.list"}
   Battle: {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Battle/Battle.list"}
   Blizzard: {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.list"}
   Steam: {!!merge <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"}
   proxylite: {!!merge <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/master/ProxyLite.list"}
-  daili: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/zhilian.list"}
+  zhilian: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/zhilian.list"}
   ai: {!!merge <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/master/AI.list"}
   youtube_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
