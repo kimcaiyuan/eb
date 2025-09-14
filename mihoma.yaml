@@ -142,8 +142,8 @@ proxy-groups:
   - {name: 🍀 Google,!!merge <<: *pr}
   - {name: 📲 Telegram,!!merge <<: *pr}
   - {name: 🤖 ChatGPT,!!merge <<: *pr}
+  - {name: 🐬 ByteMuse,!!merge <<: *pr}
   - {name: 👨🏿‍💻 GitHub,!!merge <<: *pr}
-  - {name: 🐬 OneDrive,!!merge <<: *pr}
   - {name: 🪟 Microsoft,!!merge <<: *pr}
   - {name: 🎵 TikTok,!!merge <<: *pr}
   - {name: 🎥 NETFLIX,!!merge <<: *pr}
@@ -179,10 +179,10 @@ rules:
   - RULE-SET,Steam,🎮 游戏平台
   - RULE-SET,proxylite,🚀 节点选择
   - RULE-SET,ai,🤖 ChatGPT
+  - RULE-SET,ByteMuse_domain,🐬 ByteMuse
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,youtube_domain,📹 YouTube
   - RULE-SET,google_domain,🍀 Google
-  - RULE-SET,onedrive_domain,🐬 OneDrive
   - RULE-SET,microsoft_domain,🪟 Microsoft
   - RULE-SET,tiktok_domain,🎵 TikTok
   - RULE-SET,speedtest_domain,✈️ Speedtest
@@ -209,6 +209,7 @@ rule-providers:
   emby: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/enby.list"}
   pt: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/PT1.list"}
   daili: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/daili.list"}
+  ByteMuse_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/seqi.list"}
   game: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/wow.list"}
   Battle: {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Battle/Battle.list"}
   Blizzard: {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.list"}
@@ -222,7 +223,7 @@ rule-providers:
   telegram_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
   paypal_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
-  onedrive_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
+  #onedrive_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
   cn_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   microsoft_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
   apple_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"}
