@@ -142,7 +142,7 @@ proxy-groups:
   - {name: 🍀 Google,!!merge <<: *pr}
   - {name: 📲 Telegram,!!merge <<: *pr}
   - {name: 🤖 ChatGPT,!!merge <<: *pr}
-  - {name: 🐬 ByteMuse,!!merge <<: *pr}
+  - {name: 🐬 ByteMuse,type: select, include-all: true, filter: "(?i)日|jp|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|japan"}
   - {name: 👨🏿‍💻 GitHub,!!merge <<: *pr}
   - {name: 🪟 Microsoft,!!merge <<: *pr}
   - {name: 🎵 TikTok,!!merge <<: *pr}
@@ -209,7 +209,7 @@ rule-providers:
   emby: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/enby.list"}
   pt: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/PT1.list"}
   daili: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/daili.list"}
-  ByteMuse_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/seqi.list"}
+  ByteMuse_domain: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/seqi.list"}
   game: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/wow.list"}
   Battle: {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Battle/Battle.list"}
   Blizzard: {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.list"}
