@@ -142,7 +142,7 @@ proxy-groups:
   - {name: 🍀 Google,!!merge <<: *pr}
   - {name: 📲 Telegram,!!merge <<: *pr}
   - {name: 🤖 ChatGPT,!!merge <<: *pr}
-  - {name: 🐬 ByteMuse,type: select, include-all: true, filter: "(?i)日|jp|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|japan"}
+  - {name: 🐬 ByteMuse, type: select, include-all: true, filter: "(?i)日|jp|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|japan"}
   - {name: 👨🏿‍💻 GitHub,!!merge <<: *pr}
   - {name: 🪟 Microsoft,!!merge <<: *pr}
   - {name: 🎵 TikTok,!!merge <<: *pr}
