@@ -206,17 +206,17 @@ rule-anchor:
 
 rule-providers: 
   private_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
-  emby: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/enby.list"}
-  pt: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/PT1.list"}
-  daili: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/daili.list"}
-  ByteMuse_domain: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/seqi.list"}
-  game: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/wow.list"}
+  emby: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/enby.list"}
+  pt: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/PT1.list"}
+  daili: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/daili.list"}
+  ByteMuse_domain: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/seqi.list"}
+  game: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/wow.list"}
   Battle: {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Battle/Battle.list"}
   Blizzard: {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.list"}
   Steam: {!!merge <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"}
   proxylite: {!!merge <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/master/ProxyLite.list"}
-  zhilian: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/zhilian.list"}
-  ai: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/main/ai.list"}
+  zhilian: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/zhilian.list"}
+  ai: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/ai.list"}
   youtube_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
   github_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
