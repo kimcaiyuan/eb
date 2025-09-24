@@ -216,7 +216,7 @@ rule-providers:
   Steam: {!!merge <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"}
   proxylite: {!!merge <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/master/ProxyLite.list"}
   zhilian: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/zhilian.list"}
-  ai: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/ai.list"}
+  ai: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/GPT.list"}
   youtube_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
   github_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
