@@ -116,6 +116,6 @@ DOMAIN-KEYWORD,unraid
 DOMAIN-KEYWORD,cloudflare
 #DOMAIN-SUFFIX,twingate.com
 #sq网站
-DOMAIN-BOT,mongodb.com
-DOMAIN-SUFFIX,mongodb.com
+DOMAIN-BOT,mongodb.net
+DOMAIN-SUFFIX,mongodb.net
 DOMAIN-SUFFIX,pubnub.com
