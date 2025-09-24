@@ -114,5 +114,7 @@ DOMAIN-SUFFIX,bing.com
 #unrad
 DOMAIN-KEYWORD,unraid
 DOMAIN-KEYWORD,cloudflare
+#DOMAIN-SUFFIX,twingate.com
 #sq网站
-DOMAIN-bot,mongodb.com
+DOMAIN-BOT,mongodb.com
+DOMAIN-SUFFIX,pubnub.com
