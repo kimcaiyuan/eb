@@ -137,7 +137,7 @@ proxy-groups:
   - {name: 🌐 VPS自建节点, type: select, include-all: true, filter: "(?i)vps"}
   - {name: 🌐 低倍率节点, type: select, include-all: true, filter: "(?i)0.1|0.2|0.3|0.4|0.5|0.6|0.8"}
   - {name: 📺 Emby, type: select, proxies: [🟢 直连, 🌐 低倍率节点, 🚀 节点选择, 🌐 VPS自建节点]}
-  - {name: ♻️ PT规则, type: select, proxies: [🟢 直连, 🚀 节点选择]}
+  - {name: ♻️ PT规则, type: select, proxies: [🟢 直连, 🌐 全部节点]}
   - {name: 📹 YouTube,!!merge <<: *pr}
   - {name: 🍀 Google,!!merge <<: *pr}
   - {name: 📲 Telegram,!!merge <<: *pr}
@@ -150,7 +150,7 @@ proxy-groups:
   - {name: 🎮 游戏平台, type: select, proxies: [🟢 直连, 🇭🇰 香港节点, 🇹🇼 台湾节点]}
   - {name: ✈️ Speedtest,!!merge <<: *pr}
   - {name: 💶 PayPal,!!merge <<: *pr}
-  - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择, 🇺🇲 美国节点]}
+  - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🇺🇲 美国节点]}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼,!!merge <<: *pr}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)港|hk|hongkong|hong kong"}
@@ -223,7 +223,6 @@ rule-providers:
   telegram_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
   paypal_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
-  #onedrive_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
   cn_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   microsoft_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
   apple_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"}
