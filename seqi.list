@@ -3,3 +3,19 @@ DOMAIN-KEYWORD,dmm
 DOMAIN-KEYWORD,mgstage
 DOMAIN-KEYWORD,amazon
 DOMAIN-SUFFIX,api.ffaoa.com
+#日本亚马逊（日亚）
+DOMAIN-SUFFIX,amazon.co.jp
+DOMAIN-SUFFIX,amzn.to #日亚短链接可能用到
+DOMAIN-SUFFIX，images-amazon.com，    #日亚图片域名（海报等资源）
+#Tenhow（如果你指的是明星/女优信息网站tenhow.com或类似）
+DOMAIN-SUFFIX,tenhow.com
+DOMAIN,tenhow.com， #额外补全主域名
+#DMM（包括成人内容、游戏、FANZA等）
+DOMAIN-SUFFIX,dmm.co.jp
+DOMAIN-SUFFIX,dmm.com
+DOMAIN-SUFFIX,fanza.jp #FANZA（原DMM成人部分）
+DOMAIN-SUFFIX,pic.dmm.co.jp #DMM/FANZA海报图片域名
+DOMAIN-SUFFIX,pics.dmm.co.jp
+#如果你还想覆盖更多DMM相关子域（可选，可根据需要添加）
+DOMAIN-SUFFIX,dmm-games.co.jp
+DOMAIN-SUFFIX,dmm-extension.com 
