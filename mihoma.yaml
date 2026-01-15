@@ -1,4 +1,4 @@
-DIRECTproxy-providers:
+proxy-providers:
   顶级机场_01:
     type: http
     url: "https://login.djjc.cfd/api/v1/client/subscribe?token=db32d4a1144706675b8dc"
