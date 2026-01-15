@@ -1,21 +1,26 @@
-proxy-providers:
-  Airport_01:
+DIRECTproxy-providers:
+  顶级机场_01:
     type: http
-    interval: 2000
+    url: "https://login.djjc.cfd/api/v1/client/subscribe?token=db32d4a1144706675b8dc"
+    path: ./proxy/top_01.yaml
+    interval: 86400
+    proxy: DIRECT
+    header:
+      User-Agent: 
+        - "Clash/v1.18.0"
+        - "mihomo/1.18.3"
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: 🟢 直连
-    url: "订阅1"
   Airport_02:
     type: http
     interval: 2000
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: http://www.gstatic.com/generate_204
       interval: 300
-    proxy: 🟢 直连
+    proxy: DIRECT
     url: "订阅2"   
 # 用于下载订阅时指定UA
 global-ua: clash-verge/v1.5.1
@@ -138,21 +143,21 @@ proxy-groups:
   - {name: 🌐 低倍率节点, type: select, include-all: true, filter: "(?i)0.1|0.2|0.3|0.4|0.5|0.6|0.8"}
   - {name: 📺 Emby, type: select, proxies: [🟢 直连, 🌐 低倍率节点, 🚀 节点选择, 🌐 VPS自建节点]}
   - {name: ♻️ PT规则, type: select, proxies: [🟢 直连, 🌐 全部节点]}
-  - {name: 📹 YouTube,!!merge <<: *pr}
-  - {name: 🍀 Google,!!merge <<: *pr}
-  - {name: 📲 Telegram,!!merge <<: *pr}
-  - {name: 🤖 ChatGPT,!!merge <<: *pr}
+  - {name: 📹 YouTube, <<: *pr}
+  - {name: 🍀 Google, <<: *pr}
+  - {name: 📲 Telegram, <<: *pr}
+  - {name: 🤖 ChatGPT, <<: *pr}
   - {name: 🐬 ByteMuse, type: select, include-all: true, filter: "(?i)日|jp|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|japan"}
-  - {name: 👨🏿‍💻 GitHub,!!merge <<: *pr}
-  - {name: 🪟 Microsoft,!!merge <<: *pr}
-  - {name: 🎵 TikTok,!!merge <<: *pr}
-  - {name: 🎥 NETFLIX,!!merge <<: *pr}
+  - {name: 👨🏿‍💻 GitHub, <<: *pr}
+  - {name: 🪟 Microsoft, <<: *pr}
+  - {name: 🎵 TikTok, <<: *pr}
+  - {name: 🎥 NETFLIX, <<: *pr}
   - {name: 🎮 游戏平台, type: select, proxies: [🟢 直连, 🇭🇰 香港节点, 🇹🇼 台湾节点]}
-  - {name: ✈️ Speedtest,!!merge <<: *pr}
-  - {name: 💶 PayPal,!!merge <<: *pr}
+  - {name: ✈️ Speedtest, <<: *pr}
+  - {name: 💶 PayPal, <<: *pr}
   - {name: 🍎 Apple, type: select, proxies: [🟢 直连], include-all: true, filter: "(?i)美|us|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|unitedstates|united states"}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
-  - {name: 🐟 漏网之鱼,!!merge <<: *pr}
+  - {name: 🐟 漏网之鱼, <<: *pr}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)港|hk|hongkong|hong kong"}
   - {name: 🇹🇼 台湾节点, type: select, include-all: true, filter: "(?i)台|新北|彰化|花莲|高雄|TW|Taiwan"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?i)日|jp|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|japan"}
