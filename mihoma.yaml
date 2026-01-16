@@ -1,28 +1,36 @@
 proxy-providers:
   顶级机场_01:
     type: http
-    url: "https://login.djjc.cfd/api/v1/client/subscribe?token=db32d4a1144706675b8dc"
-    path: ./proxy/top_01.yaml
+    path: ./proxy-providers/top_01.yaml
     interval: 86400
-    proxy: DIRECT
-    header:
-      User-Agent: 
-        - "Clash/v1.18.0"
-        - "mihomo/1.18.3"
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-  Airport_02:
-    type: http
-    interval: 2000
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
     proxy: DIRECT
-    url: "订阅2"   
-# 用于下载订阅时指定UA
+    # 请填入你自己的订阅地址
+    url: "https://你的订阅地址1"
+  良心云_02:
+    type: http
+    path: ./proxy-providers/lxy.yaml
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+    proxy: DIRECT
+    url: "https://你的订阅地址2"
+  绿叶云_03:
+    type: http
+    path: ./proxy-providers/lvye_01.yaml
+    interval: 300000
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+    proxy: DIRECT
+    url: "https://你的订阅地址3"
+
 global-ua: clash-verge/v1.5.1
     
 # 全局配置
@@ -52,7 +60,7 @@ secret: ""
 external-ui: ui
 external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
-# 匹配进程 always/strict/off
+# 匹配进程
 find-process-mode: strict
 global-client-fingerprint: chrome
 keep-alive-idle: 600
@@ -99,11 +107,8 @@ dns:
   listen: 0.0.0.0:1053
   ipv6: false
   respect-rules: true
-  # 模式切换 redir-host / fake-ip
   enhanced-mode: fake-ip
   fake-ip-range: 28.0.0.1/8
-  # 模式切换 whitelist/blacklist 
-  # 黑名单模式表示如果匹配成功则不返回 Fake-IP, 白名单模式时只有匹配成功才返回 Fake-IP
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - "+.lan"
@@ -114,26 +119,27 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
   proxy-server-nameserver:
-    - 223.5.5.5
+    - https://223.5.5.5/dns-query
     - 119.29.29.29
   nameserver:
-    - 223.5.5.5
+    - 222.246.129.81
     - 119.29.29.29
   nameserver-policy:
     "rule-set:private_domain,cn_domain":
-    - 223.5.5.5
-    - 119.29.29.29
-  "rule-set:geolocation-!cn":
-    - "https://dns.cloudflare.com/dns-query"
-    - "https://dns.google/dns-query"
+      - 223.5.5.5
+      - 119.29.29.29
+    "rule-set:geolocation-!cn":
+      - "https://dns.cloudflare.com/dns-query"
+      - "https://dns.google/dns-query"
  
 proxies:
   - name: "🟢 直连"
     type: direct
     udp: true
- 
+
 # 锚点
 pr: &pr {type: select, proxies: [🚀 节点选择, 🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯 新加坡故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点,🇸🇬 新加坡节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🟢 直连]}
+
 # 策略组
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯 新加坡故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点,🇸🇬 新加坡节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🟢 直连]}
@@ -143,21 +149,21 @@ proxy-groups:
   - {name: 🌐 低倍率节点, type: select, include-all: true, filter: "(?i)0.1|0.2|0.3|0.4|0.5|0.6|0.8"}
   - {name: 📺 Emby, type: select, proxies: [🟢 直连, 🌐 低倍率节点, 🚀 节点选择, 🌐 VPS自建节点]}
   - {name: ♻️ PT规则, type: select, proxies: [🟢 直连, 🌐 全部节点]}
-  - {name: 📹 YouTube, <<: *pr}
-  - {name: 🍀 Google, <<: *pr}
-  - {name: 📲 Telegram, <<: *pr}
-  - {name: 🤖 ChatGPT, <<: *pr}
+  - {name: 📹 YouTube, !!merge <<: *pr}
+  - {name: 🍀 Google, !!merge <<: *pr}
+  - {name: 📲 Telegram, !!merge <<: *pr}
+  - {name: 🤖 ChatGPT, !!merge <<: *pr}
   - {name: 🐬 ByteMuse, type: select, include-all: true, filter: "(?i)日|jp|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|japan"}
-  - {name: 👨🏿‍💻 GitHub, <<: *pr}
-  - {name: 🪟 Microsoft, <<: *pr}
-  - {name: 🎵 TikTok, <<: *pr}
-  - {name: 🎥 NETFLIX, <<: *pr}
+  - {name: 👨🏿‍💻 GitHub, !!merge <<: *pr}
+  - {name: 🪟 Microsoft, !!merge <<: *pr}
+  - {name: 🎵 TikTok, !!merge <<: *pr}
+  - {name: 🎥 NETFLIX, !!merge <<: *pr}
   - {name: 🎮 游戏平台, type: select, proxies: [🟢 直连, 🇭🇰 香港节点, 🇹🇼 台湾节点]}
-  - {name: ✈️ Speedtest, <<: *pr}
-  - {name: 💶 PayPal, <<: *pr}
+  - {name: ✈️ Speedtest, !!merge <<: *pr}
+  - {name: 💶 PayPal, !!merge <<: *pr}
   - {name: 🍎 Apple, type: select, proxies: [🟢 直连], include-all: true, filter: "(?i)美|us|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|unitedstates|united states"}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
-  - {name: 🐟 漏网之鱼, <<: *pr}
+  - {name: 🐟 漏网之鱼, !!merge <<: *pr}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)港|hk|hongkong|hong kong"}
   - {name: 🇹🇼 台湾节点, type: select, include-all: true, filter: "(?i)台|新北|彰化|花莲|高雄|TW|Taiwan"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?i)日|jp|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|japan"}
@@ -239,4 +245,3 @@ rule-providers:
   netflix_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
   telegram_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
   cn_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
-
