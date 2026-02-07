@@ -218,7 +218,7 @@ rule-anchor:
 rule-providers: 
   private_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   emby: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/enby.list"}
-  pt: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/PT1.list"}
+  pt: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/PT.list"}
   daili: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/daili.list"}
   ByteMuse_domain: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/seqi.list"}
   game: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/wow.list"}
