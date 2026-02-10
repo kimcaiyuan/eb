@@ -292,7 +292,6 @@ DOMAIN-SUFFIX,ptchdbits.co
 DOMAIN-SUFFIX,chddiy.xyz
 DOMAIN-SUFFIX,connects.icu
 DOMAIN-SUFFIX,nextpt.net
-DOMAIN-SUFFIX,rousi.pro
 DOMAIN-SUFFIX,fsm.name
 DOMAIN-SUFFIX,pt.0ff.cc
 DOMAIN-SUFFIX,hddolby.com
@@ -303,7 +302,8 @@ DOMAIN-SUFFIX,ultrahd.net
 DOMAIN-SUFFIX,ubits.club
 DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,springsunday.net
-DOMAIN-SUFFIX,rousi.zip
+#DOMAIN-SUFFIX,rousi.zip
+#DOMAIN-SUFFIX,rousi.pro
 DOMAIN-SUFFIX,pterclub.net
 DOMAIN-SUFFIX,ourbits.club
 DOMAIN-SUFFIX,hhanclub.net
