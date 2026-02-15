@@ -146,7 +146,7 @@ proxy-groups:
   - {name: 🔯 故障转移, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}  
   - {name: 🌐 全部节点, type: select, include-all: true}
   - {name: 🌐 VPS自建节点, type: select, include-all: true, filter: "(?i)vps"}
-  - {name: 🌐 低倍率节点, type: select, include-all: true, filter: "(?i)0.1|0.2|0.3|0.4|0.5|0.6|0.8"}
+  - {name: 🌐 低倍率节点, type: select, include-all: true, filter: "(?i)0.1|0.2|0.3|0.4|0.5|0.6|0.8｜实验性"}
   - {name: 📺 Emby, type: select, proxies: [🟢 直连, 🌐 低倍率节点, 🚀 节点选择, 🌐 VPS自建节点]}
   - {name: ♻️ PT规则, type: select, proxies: [🟢 直连, 🌐 全部节点]}
   - {name: 📹 YouTube, !!merge <<: *pr}
