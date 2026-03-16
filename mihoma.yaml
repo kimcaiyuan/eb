@@ -93,7 +93,7 @@ sniffer:
 tun:
   enable: true
   stack: mixed
-  mtu: 9000
+  mtu: 1500
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
@@ -138,11 +138,11 @@ proxies:
     udp: true
 
 # 锚点
-pr: &pr {type: select, proxies: [🚀 节点选择, 🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯 新加坡故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点,🇸🇬 新加坡节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🟢 直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, 🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯台湾故转, 🔯 美国故转, 🔯 新加坡故转, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点, 🇹🇷 土耳其节点, 🇸🇬 新加坡节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🟢 直连]}
 
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯 新加坡故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点,🇸🇬 新加坡节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🟢 直连]}
+  - {name: 🚀 节点选择, type: select, proxies: [🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯台湾故转, 🔯 美国故转, 🔯 新加坡故转, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点, 🇹🇷 土耳其节点, 🇸🇬 新加坡节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🟢 直连]}
   - {name: 🔯 故障转移, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}  
   - {name: 🌐 全部节点, type: select, include-all: true}
   - {name: 🌐 VPS自建节点, type: select, include-all: true, filter: "(?i)vps"}
@@ -161,22 +161,21 @@ proxy-groups:
   - {name: 🎮 游戏平台, type: select, proxies: [🟢 直连, 🇭🇰 香港节点, 🇹🇼 台湾节点]}
   - {name: ✈️ Speedtest, !!merge <<: *pr}
   - {name: 💶 PayPal, !!merge <<: *pr}
-  - {name: 🍎 Apple, type: select, proxies: [🟢 直连], include-all: true, filter: "(?i)美|us|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|unitedstates|united states"}
+  - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🇺🇲 美国节点, 🇹🇷 土耳其节点]}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼, !!merge <<: *pr}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)港|hk|hongkong|hong kong"}
   - {name: 🇹🇼 台湾节点, type: select, include-all: true, filter: "(?i)台|新北|彰化|花莲|高雄|TW|Taiwan"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?i)日|jp|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|japan"}
-  - {name: 🇸🇬 新加坡节点, type: select, include-all: true, filter: "(?i)新|sg|Singapore"}  
+  - {name: 🇸🇬 新加坡节点, type: select, include-all: true, filter: "(?i)新|sg|Singapore"}
+  - {name: 🇹🇷 土耳其节点, type: select, include-all: true, filter: "(?i)土耳其|tr|turkey"}
   - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?i)韩|kr|KR|Korea|KOR|首尔|韩|韓"}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美|us|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|unitedstates|united states"}
   - {name: 🔯 香港故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美|vps)).)*$"}
+  - {name: 🔯 台湾故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台|新北|彰化|花莲|高雄|TW|Taiwan)).)*$"}
   - {name: 🔯 日本故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美|vps)).)*$" }
-  - {name: 🔯 新加坡故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新|SG))^((?!(港|台|韩|VPS|美|vps)).)*$" }  
-  - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美|vps)).)*$"}
-  - {name: ♻️ 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美|vps)).)*$" }
-  - {name: ♻️ 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新|vps)).)*$"}
-  - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连|备用)).)*$"}
+  - {name: 🔯 美国故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?i)美|us|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|unitedstates|united states"}
+  - {name: 🔯 新加坡故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新|SG))^((?!(港|台|韩|VPS|美|vps)).)*$" }
 
 rules:
   - RULE-SET,private_domain,🟢 直连
