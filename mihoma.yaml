@@ -1,36 +1,33 @@
 proxy-providers:
   顶级机场_01:
     type: http
-    path: ./proxy-providers/top_01.yaml
     interval: 86400
     health-check:
       enable: true
-      url: http://www.gstatic.com/generate_204
+      url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: DIRECT
-    # 请填入你自己的订阅地址
-    url: "https://你的订阅地址1"
+    proxy: 🟢 直连
+    url: ""
   良心云_02:
     type: http
-    path: ./proxy-providers/lxy.yaml
     interval: 86400
     health-check:
       enable: true
-      url: http://www.gstatic.com/generate_204
+      url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: DIRECT
-    url: "https://你的订阅地址2"
-  绿叶云_03:
+    proxy: 🟢 直连
+    url: ""
+  花云_03:
     type: http
-    path: ./proxy-providers/lvye_01.yaml
-    interval: 300000
+    interval: 86400
     health-check:
       enable: true
-      url: http://www.gstatic.com/generate_204
+      url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: DIRECT
-    url: "https://你的订阅地址3"
+    proxy: 🟢 直连
+    url: ""    
 
+# 用于下载订阅时指定UA
 global-ua: clash-verge/v1.5.1
     
 # 全局配置
@@ -60,7 +57,7 @@ secret: ""
 external-ui: ui
 external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
-# 匹配进程
+# 匹配进程 always/strict/off
 find-process-mode: strict
 global-client-fingerprint: chrome
 keep-alive-idle: 600
@@ -107,8 +104,11 @@ dns:
   listen: 0.0.0.0:1053
   ipv6: false
   respect-rules: true
+  # 模式切换 redir-host / fake-ip
   enhanced-mode: fake-ip
   fake-ip-range: 28.0.0.1/8
+  # 模式切换 whitelist/blacklist 
+  # 黑名单模式表示如果匹配成功则不返回 Fake-IP, 白名单模式时只有匹配成功才返回 Fake-IP
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - "+.lan"
@@ -126,17 +126,16 @@ dns:
     - 119.29.29.29
   nameserver-policy:
     "rule-set:private_domain,cn_domain":
-      - 223.5.5.5
-      - 119.29.29.29
-    "rule-set:geolocation-!cn":
-      - "https://dns.cloudflare.com/dns-query"
-      - "https://dns.google/dns-query"
+    - 223.5.5.5
+    - 119.29.29.29
+  "rule-set:geolocation-!cn":
+    - "https://dns.cloudflare.com/dns-query"
+    - "https://dns.google/dns-query"
  
 proxies:
   - name: "🟢 直连"
     type: direct
     udp: true
-
 # 锚点
 pr: &pr {type: select, proxies: [🚀 节点选择, 🌐 全部节点, 🔯 故障转移,🌐 VPS自建节点,🌐 低倍率节点,🔯 香港故转, 🔯 日本故转, 🔯 台湾故转, 🔯 美国故转, 🔯 新加坡故转, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点, 🇹🇷 土耳其节点, 🇸🇬 新加坡节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🟢 直连]}
 
@@ -146,7 +145,7 @@ proxy-groups:
   - {name: 🔯 故障转移, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}  
   - {name: 🌐 全部节点, type: select, include-all: true}
   - {name: 🌐 VPS自建节点, type: select, include-all: true, filter: "(?i)vps"}
-  - {name: 🌐 低倍率节点, type: select, include-all: true, filter: "(?i)0.1|0.2|0.3|0.4|0.5|0.6|0.8｜实验性"}
+  - {name: 🌐 低倍率节点, type: select, include-all: true, filter: "(?i)0.1|0.2|0.3|0.4|0.5|0.6|0.8|实验性"}
   - {name: 📺 Emby, type: select, proxies: [🟢 直连, 🌐 低倍率节点, 🚀 节点选择, 🌐 VPS自建节点]}
   - {name: ♻️ PT规则, type: select, proxies: [🟢 直连, 🌐 全部节点]}
   - {name: 📹 YouTube, !!merge <<: *pr}
@@ -157,6 +156,7 @@ proxy-groups:
   - {name: 👨🏿‍💻 GitHub, !!merge <<: *pr}
   - {name: 🪟 Microsoft, !!merge <<: *pr}
   - {name: 🎵 TikTok, !!merge <<: *pr}
+  - {name: 🎵 Spotify, !!merge <<: *pr}
   - {name: 🎥 NETFLIX, !!merge <<: *pr}
   - {name: 🎮 游戏平台, type: select, proxies: [🟢 直连, 🇭🇰 香港节点, 🇹🇼 台湾节点]}
   - {name: ✈️ Speedtest, !!merge <<: *pr}
@@ -178,34 +178,57 @@ proxy-groups:
   - {name: 🔯 新加坡故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新|SG))^((?!(港|台|韩|VPS|美|vps)).)*$" }
 
 rules:
+  # --- 1. 本地与私有网络 (最高优先级，严防漏油) ---
   - RULE-SET,private_domain,🟢 直连
-  - RULE-SET,emby,📺 Emby
   - RULE-SET,pt,♻️ PT规则
-  - RULE-SET,apple_domain,🍎 Apple
-  - RULE-SET,daili,🌐 全部节点
+  - RULE-SET,zhilian,🎯 全球直连
+
+  # --- 2. 测速与特定工具 (走直连或特定节点) ---
+  - RULE-SET,speedtest_domain,✈️ Speedtest
+
+  # --- 3. 高优特定服务 (需要独立分流或解锁) ---
+  - RULE-SET,ai,🤖 ChatGPT
+  - RULE-SET,netflix_domain,🎥 NETFLIX
+  - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
+  - RULE-SET,Disney+-Domain,🎥 NETFLIX
+  - RULE-SET,HBO Max-Domain,🎥 NETFLIX
+  - RULE-SET,Spotify-Domain,🎵 Spotify
+  - RULE-SET,Prime Video-Domain,🎥 NETFLIX
+  - RULE-SET,youtube_domain,📹 YouTube
+  - RULE-SET,tiktok_domain,🎵 TikTok
+  - RULE-SET,telegram_domain,📲 Telegram
+  - RULE-SET,telegram_ip,📲 Telegram,no-resolve
+  - RULE-SET,google_domain,🍀 Google
+  - RULE-SET,google_ip,🍀 Google,no-resolve
+  - RULE-SET,github_domain,👨🏿‍💻 GitHub
+
+  # --- 4. 游戏与垂直服务 ---
   - RULE-SET,game,🎮 游戏平台
   - RULE-SET,Battle,🎮 游戏平台
   - RULE-SET,Blizzard,🎮 游戏平台
   - RULE-SET,Steam,🎮 游戏平台
-  - RULE-SET,proxylite,🚀 节点选择
-  - RULE-SET,ai,🤖 ChatGPT
+  - RULE-SET,emby,📺 Emby
   - RULE-SET,ByteMuse_domain,🐬 ByteMuse
-  - RULE-SET,github_domain,👨🏿‍💻 GitHub
-  - RULE-SET,youtube_domain,📹 YouTube
-  - RULE-SET,google_domain,🍀 Google
+
+  # --- 5. 系统服务与金融 (建议直连，除非有特殊需求) ---
+  - RULE-SET,apple_domain,🍎 Apple
+  - RULE-SET,Apple-CN-Domain,🍎 Apple
+  - RULE-SET,Apple-IP,🍎 Apple,no-resolve
   - RULE-SET,microsoft_domain,🪟 Microsoft
-  - RULE-SET,tiktok_domain,🎵 TikTok
-  - RULE-SET,speedtest_domain,✈️ Speedtest
-  - RULE-SET,telegram_domain,📲 Telegram
-  - RULE-SET,netflix_domain,🎥 NETFLIX
   - RULE-SET,paypal_domain,💶 PayPal
+
+  # --- 6. 宽泛代理规则 (处理其余海外流量) ---
+  # 先走小范围的黑名单/代理库
+  - RULE-SET,daili,🌐 全部节点
+  - RULE-SET,gfw_domain,🚀 节点选择
+  # 再走大范围的非中国库
   - RULE-SET,geolocation-!cn,🚀 节点选择
-  - RULE-SET,zhilian,🎯 全球直连
+
+  # --- 7. 中国流量拦截 (全面直连) ---
   - RULE-SET,cn_domain,🎯 全球直连
-  - RULE-SET,google_ip,🍀 Google,no-resolve
-  - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
-  - RULE-SET,telegram_ip,📲 Telegram,no-resolve
-  - RULE-SET,cn_ip,🎯 全球直连
+  - RULE-SET,cn_ip,🎯 全球直连,no-resolve
+
+  # --- 8. 最终兜底 ---
   - MATCH,🐟 漏网之鱼
 
 rule-anchor:
@@ -224,23 +247,29 @@ rule-providers:
   Battle: {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Battle/Battle.list"}
   Blizzard: {!!merge <<: *class, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.list"}
   Steam: {!!merge <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"}
-  proxylite: {!!merge <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/master/ProxyLite.list"}
   zhilian: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/zhilian.list"}
-  ai: {!!merge <<: *class, url: "https://raw.githubusercontent.com/kimcaiyuan/eb/refs/heads/main/GPT.list"}
+  ai: {!!merge <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs"}
   youtube_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
   github_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   telegram_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
+  netflix_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
+  Disney+-Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/metacubex/meta-rules-dat/meta/geo/geosite/disney.mrs" }
+  HBO Max-Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/metacubex/meta-rules-dat/meta/geo/geosite/hbo.mrs" }
+  Spotify-Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/metacubex/meta-rules-dat/meta/geo/geosite/spotify.mrs" }
+  Prime Video-Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list" }
+  Hulu-Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Hulu/Hulu.list" }
   paypal_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
-  cn_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   microsoft_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
-  apple_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"}
+  apple_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"}
+  Apple-CN-Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/metacubex/meta-rules-dat/meta/geo/geosite/apple-cn.mrs" }
+  Apple-IP: {<<: *ip, url: "https://gh-proxy.com/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.mrs"}  
   speedtest_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs"}
-  tiktok_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
+  tiktok_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}  
+  google_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
+  telegram_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
   gfw_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs"}
   geolocation-!cn: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
-  google_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
-  netflix_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
-  telegram_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
+  cn_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   cn_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
