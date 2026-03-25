@@ -71,11 +71,11 @@ DOMAIN,tr.api.fanbyte.com
 DOMAIN-KEYWORD,dashlane
 DOMAIN-SUFFIX,bing.com
 #TMDB
-#DOMAIN,api.themoviedb.org
-#DOMAIN,api4.thetvdb.com
-#DOMAIN,api.tmdb.org
-#DOMAIN-KEYWORD,themoviedb
-#DOMAIN,image.tmdb.org
+DOMAIN,api.themoviedb.org
+DOMAIN,api4.thetvdb.com
+DOMAIN,api.tmdb.org
+DOMAIN-KEYWORD,themoviedb
+DOMAIN,image.tmdb.org
 #docker
 DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,cdn.adguard.com
