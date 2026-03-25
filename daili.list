@@ -24,8 +24,8 @@ DOMAIN,translate.googleapis.com
 #DOMAIN-SUFFIX,jp.tiarap.org
 #DOMAIN-SUFFIX,dns.comss.one
 #DOMAIN,api-ipv4.ip.sb
-#DOMAIN-KEYWORD,ipify
-#DOMAIN-KEYWORD,ip.sb
+DOMAIN-KEYWORD,ipify
+DOMAIN-KEYWORD,ip.sb
 #DOMAIN,dns.cloudflare.com
 #DOMAIN,dns.google/dns-query
 #DOMAIN,public.dns.iij.jp/dns-query
@@ -71,11 +71,11 @@ DOMAIN,tr.api.fanbyte.com
 DOMAIN-KEYWORD,dashlane
 DOMAIN-SUFFIX,bing.com
 #TMDB
-DOMAIN,api.themoviedb.org
-DOMAIN,api4.thetvdb.com
-DOMAIN,api.tmdb.org
-DOMAIN-KEYWORD,themoviedb
-DOMAIN,image.tmdb.org
+#DOMAIN,api.themoviedb.org
+#DOMAIN,api4.thetvdb.com
+#DOMAIN,api.tmdb.org
+#DOMAIN-KEYWORD,themoviedb
+#DOMAIN,image.tmdb.org
 #docker
 DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,cdn.adguard.com
