@@ -97,3 +97,5 @@ DOMAIN-KEYWORD,cloudflare
 
 #影巢
 DOMAIN-SUFFIX,hdhive.com
+#划词翻译
+DOMAIN-SUFFIX,hcfy.ai
